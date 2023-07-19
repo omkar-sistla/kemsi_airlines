@@ -1,0 +1,21 @@
+.guidelinepage .cover{
+    height: 50vh;
+}
+.guidelines{
+    max-width: 900px;
+    padding: 50px;
+    margin: auto;
+    font-family: sans-serif;
+    box-shadow: 0 0 5px rgb(167, 167, 167);
+}
+.guidelines h1{
+    text-align: center;
+    color: #E57C23;
+    margin-bottom: 50px;
+    border-bottom: 1px solid black;
+}
+.guidelines h2{
+    font-weight: 600;
+    background-color: rgb(189, 189, 189);
+    padding:0px 8px;
+}

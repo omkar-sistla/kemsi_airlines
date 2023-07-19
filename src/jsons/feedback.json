@@ -1,0 +1,15 @@
+{
+    "list":"data",
+    "placeholder":"Select",
+    "options":[
+        "Overall Experience",
+        "Flight Crew and Service",
+        "Baggage Handling",
+        "Onboard Comfort",
+        "Customer Service",
+        "Booking Process",
+        "Suggestions and Improvements",
+        "Complaints",
+        "Others"
+    ]
+}

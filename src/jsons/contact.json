@@ -1,0 +1,23 @@
+[
+    {
+        "icon":"fa-solid fa-location-dot",
+        "type":"ADDRESS",
+        "info":[
+            "Kemsi airlines building,", "Kemsi road, Kemsi nagar"
+        ]
+    },
+    {
+        "icon":"fa-sharp fa-solid fa-envelope",
+        "type":"EMAIL",
+        "info":[
+            "contactkemsi@kemsiairlines.ac.in", "kemsicontact@kemsiairlines.ac.in"
+        ]
+    },
+    {
+        "icon":"fa-solid fa-phone",
+        "type":"PHONE",
+        "info":[
+            "+91 94xxxxxxxx","+91 83xxxxxxxx"
+        ]
+    }
+]

@@ -1,0 +1,87 @@
+[
+    {
+        "heading":"Diverse Packages, Limitless Destinations",
+        "tagline":"Unlock the best of travel with our custom-made packages, offering incredible value for your money.",
+        "plans":[
+            {
+                "id" : 1,
+                "img": "./assets/images/travel_with_group.jpg",
+                "alt": "a group of friends",
+                "name": "Travel With Group",
+                "description": "Ready for an amazing group outing?",
+                "link":"/#"
+            },
+            {
+                "id":2,
+                "img":"./assets/images/tour.jpg",
+                "alt":"tourist setup",
+                "name":"Fly, Stay, Explore",
+                "description":"Travel to multiple destinations and explore...",
+                "link":"/#"
+            },
+            {
+                "id":3,
+                "img":"./assets/images/tour2.jpg",
+                "alt":"culture image",
+                "name":"Engage Traditions",
+                "description":"Dvelve deep into the local culture",
+                "link":"/#"
+            },
+            {
+                "id":4,
+                "img":"./assets/images/wellness.jpg",
+                "alt":"wellness retreat image",
+                "name":"Welleness Retreat",
+                "description":"Explore peace",
+                "link":"/#"
+            }
+        ]
+    },
+    {
+        "heading":"Jet Set Go, with ease...",
+        "tagline":"Take a moment to familiarize yourself with our travel guidelines.",
+        "plans":[
+            {
+                "id": 1,
+                "img": "./assets/images/baggage.jpg",
+                "alt": "a group of friends",
+                "name": "Baggage Allowance",
+                "link":"/baggage"
+            },
+            {
+                "id":2,
+                "img":"./assets/images/boarding.jpg",
+                "alt":"tourist setup",
+                "name":"Boarding and Check-In",
+                "link":"/boarding-and-check-in"
+            },
+            {
+                "id":3,
+                "img":"./assets/images/in_flight.jpg",
+                "alt":"culture image",
+                "name":"In-Flight",
+                "link":"/inflight"
+            },
+            {
+                "id":4,
+                "img":"./assets/images/Contact_us.jpg",
+                "alt":"wellness retreat image",
+                "name":"Ask for support",
+                "link":"/contact-us"
+            }
+        ]
+    },
+
+    {
+        "coupons":[
+            {
+                "id":1,
+                "img":"./assets/images/red coupon.png"
+            },
+            {
+                "id":2,
+                "img":"./assets/images/yellow coupon.gif"
+            }
+        ]
+    }     
+]

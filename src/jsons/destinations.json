@@ -1,0 +1,97 @@
+[
+    {
+      "city": "Ahmedabad",
+      "destinations": "Mumbai, New Delhi, Chennai, Hyderabad, Kolkata",
+      "img": "./assets/images/dest_amd.jpg"
+    },
+    {
+      "city": "Amritsar",
+      "destinations": "New Delhi, Chandigarh, Jaipur, Srinagar, Kolkata",
+      "img": "./assets/images/dest_amritsar.jpg"
+    },
+    {
+      "city": "Bengaluru",
+      "destinations": "Chennai, Hyderabad, Kochi, Kolkata, Mangalore, Mumbai, New Delhi, Pune, Thiruvananthapuram",
+      "img": "./assets/images/dest_bang.jpg"
+    },
+    {
+      "city": "Chandigarh",
+      "destinations": "New Delhi, Amritsar, Jaipur, Srinagar, Kolkata",
+      "img": "./assets/images/dest_chandigarh.jpg"
+    },
+    {
+      "city": "Chennai",
+      "destinations": "Bengaluru, Hyderabad, Kochi, Kolkata, Madurai",
+      "img": "./assets/images/dest_chennai.jpg"
+    },
+    {
+      "city": "Goa",
+      "destinations": "Mumbai, Hyderabad, Kochi, Kolkata, Pune",
+      "img": "./assets/images/dest_goa.jpg"
+    },
+    {
+      "city": "Hyderabad",
+      "destinations": "Bengaluru, Chennai, Kochi, Kolkata, Mumbai, New Delhi, Pune, Vijayawada",
+      "img": "./assets/images/dest_hyd.jpg"
+    },
+    {
+      "city": "Jaipur",
+      "destinations": "New Delhi, Amritsar, Chandigarh, Srinagar, Kolkata",
+      "img": "./assets/images/dest_jaipur.jpg"
+    },
+    {
+      "city": "Kochi",
+      "destinations": "Bengaluru, Chennai, Goa, Hyderabad, Kolkata",
+      "img": "./assets/images/dest_kochi.jpg"
+    },
+    {
+      "city": "Kolkata",
+      "destinations": "Ahmedabad, Amritsar, Bengaluru, Chandigarh, Chennai, Goa, Hyderabad, Jaipur, Kochi, Srinagar",
+      "img": "./assets/images/dest_kol.jpg"
+    },
+    {
+      "city": "Kozhikode",
+      "destinations": "Chennai, Kochi, Thiruvananthapuram",
+      "img": "./assets/images/dest_kozh.jpg"
+    },
+    {
+      "city": "Madurai",
+      "destinations": "Chennai",
+      "img": "./assets/images/dest_madhurai.jpg"
+    },
+    {
+      "city": "Mangalore",
+      "destinations": "Bengaluru",
+      "img": "./assets/images/dest_mang.jpg"
+    },
+    {
+      "city": "Mumbai",
+      "destinations": "Ahmedabad, Bengaluru, Chennai, Delhi, Goa, Hyderabad, Kolkata, Pune, Srinagar",
+      "img": "./assets/images/dest_mum.jpg"
+    },
+    {
+      "city": "New Delhi",
+      "destinations": "Ahmedabad, Amritsar, Bengaluru, Chandigarh, Hyderabad, Jaipur, Kolkata, Mumbai, Pune, Srinagar",
+      "img": "./assets/images/dest_newdelhi.jpg"
+    },
+    {
+      "city": "Pune",
+      "destinations": "Ahmedabad, Bengaluru, Hyderabad, Kolkata, Mumbai, New Delhi",
+      "img": "./assets/images/dest_pune.jpg"
+    },
+    {
+      "city": "Srinagar",
+      "destinations": "Amritsar, Chandigarh, Jaipur, Kolkata, Mumbai, New Delhi",
+      "img": "./assets/images/dest_srinagar.jpg"
+    },
+    {
+      "city": "Thiruvananthapuram",
+      "destinations": "Bengaluru, Kozhikode",
+      "img": "./assets/images/dest_tiruva.jpg"
+    },
+    {
+      "city": "Vijayawada",
+      "destinations": "Hyderabad",
+      "img": "./assets/images/dest_vij.jpeg"
+    }
+  ]

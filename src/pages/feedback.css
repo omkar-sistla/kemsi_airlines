@@ -1,0 +1,19 @@
+#feedback_page{
+    margin: 0;
+    background-color: black;
+    display: flex;
+    min-height: 100vh;
+}
+form.feedback_form label{
+    font-family: 'montserrat',sans-serif;
+    font-size: 14px;
+}
+form h1{
+    font-family: 'montserrat',sans-serif;
+    text-align: center;
+    font-weight: 100;
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}

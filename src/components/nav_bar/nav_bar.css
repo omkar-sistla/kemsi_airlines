@@ -1,0 +1,141 @@
+#TOP_ELEMENT{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #E57C23; */
+    align-items: center;
+    z-index: 999;
+}
+#TOP_ELEMENT{
+    background-color: transparent;
+    transition: 1s;
+}
+#TOP_ELEMENT:hover{
+    background-color: #E57C23;
+    transition:1s;
+}
+#TOP_ELEMENT.scrolled{
+    background-color: #E57C23;
+    box-shadow: 0px 2px 10px rgb(111, 111, 111);
+    transition:1s;
+}
+#TOP_ELEMENT>i{
+    display: none;
+}
+#Logo{
+    width: 200px;
+    height: 100px;  
+}
+.menu>.upper ,.menu>.lower{    
+    list-style: none;
+    text-align: center;
+    padding-right: 10px;
+    display: flex;
+    gap: 20px; 
+    position: relative;
+}
+.menu>.lower{
+    gap: 30px; 
+}
+.menu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.menu a, .menu b{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10pt;
+    color: white;
+}
+
+.menu a:hover, .menu b:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.menu b, .menu b:hover{
+    margin: 0;
+    font-weight: 400;
+    cursor: pointer;
+}
+.display_name{
+    position: relative;
+    user-select: none;
+}
+.user_options{
+    display: none;
+}
+.user_options.active{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    /* transform: translate(-50%); */
+    background-color: orange;
+    width: 100px;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: 0 0 20px 2px rgb(124, 81, 0);
+}
+.user_options b{
+    padding: 10px;
+}
+@media(max-width:760px){
+    #TOP_ELEMENT{
+        height: 80px;
+        align-items: center;
+    }
+    #Logo{
+        height:60px;
+        width: 120px;
+        margin-left: 10px;
+    }
+    #TOP_ELEMENT>i{
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        color: white;
+    }
+    #TOP_ELEMENT .menu{
+        display: none;
+    }
+    #TOP_ELEMENT .menu.active{
+        display: flex;    
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        background-color: orange;
+        padding: 20px 0px 20px 0px;
+        overflow: scroll;
+        transition: 0.5s ease-in;         
+    }
+    .menu ul{
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        gap: 0px;
+    }
+    .menu a{
+        width: 100%;
+    }
+    .user_options.active{
+        margin: auto;
+        transform: translate(50%);
+        right: 50%;
+        background-color: #E57C23;
+    }
+
+}
