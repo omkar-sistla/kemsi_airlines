@@ -1,10 +1,11 @@
 .flight{
     display: flex;
-    width: fit-content;
+    max-width: fit-content;
     padding: 20px;
     font-family: 'montserrat';
     margin: auto;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px rgb(144, 144, 144);
+    margin-top: 100px;
 }
 .flight .flightdetails{
     display: flex;
@@ -29,4 +30,31 @@
 .flight .time{
     font-size: 35px;
     margin: 0;
+}
+.middlepart{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+.dottedline{
+    height: 1px;
+    width: 100%;
+    border-top: 1px dashed black;
+}
+@media(max-width:480px){
+    .flight .time{
+        font-size: 22px;
+        border: 1px solid black;
+    }
+    .flight{
+        max-width: 80vw;
+        gap: 10px;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .flight .flightdetails{
+        gap: 10px;
+    }
 }

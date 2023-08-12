@@ -121,7 +121,7 @@ function Booking(){
                     <div className="details input_container"> 
                         <label>To</label>
                         <Select options={countries.filter((option)=>option[1].toLowerCase()!==bookingValues.from.toLowerCase().slice(0,-5))} 
-                        placeholder="To" onSelect={handleToOption}/> 
+                        placeholder="To" onSelect={handleToOption} class="to"/> 
                     </div>
                 </div>
                 <div className="input_group">
