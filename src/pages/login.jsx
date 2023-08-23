@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import NavBar from "../components/nav_bar/nav_bar";
 import { auth } from "../config/firebase";
-import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification, signOut} from "firebase/auth";
 import "./login.css"
 function NameInput(props){
     return(
@@ -73,12 +73,21 @@ export default function Login(){
         setSubmitDisable(true);
         createUserWithEmailAndPassword(auth, signUpValues.email, signUpValues.pass)
         .then(async (res) =>{
-            setSubmitDisable(false);
             const user = res.user;
-           await updateProfile(user, {
+            await updateProfile(user, {
                 displayName: signUpValues.firstName,
             });
-            navigate("/");
+            await sendEmailVerification(user);
+            signOut(auth)
+            .then(()=>{
+            navigate("/login");
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+            setSubmitDisable(false);
+            setErrorMsg("Account created. Please check your email and verify your account, then log in.");
+            // navigate("/");
         })
         .catch((err) => {
             setSubmitDisable(false);
@@ -87,6 +96,7 @@ export default function Login(){
     }
     const ToggleSignup = () => {
         setsignup(!signup);
+        setErrorMsg("");
     }
     return(
         <div id="login_page"> 
