@@ -1,11 +1,12 @@
 import React from "react";
 import './nav_bar.css';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import {auth} from "../../config/firebase";
 import { signOut } from "firebase/auth";
 function NavBar(){
     const [isLoggedIn, setIsLoggedIn] = useState("");
+    const navigate = useNavigate();
     useEffect(()=>{
         auth.onAuthStateChanged((user) => {
         if (user) {
@@ -14,7 +15,9 @@ function NavBar(){
         });
     },[]);
     const handleSignOut=()=>{
-        signOut(auth).then(()=>{
+        signOut(auth)
+        .then(()=>{
+            navigate("/login");
         })
         .catch((err) => {
             console.log(err);
