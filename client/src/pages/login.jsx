@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {useNavigate} from "react-router-dom";
 import NavBar from "../components/nav_bar/nav_bar";
 import { auth } from "../config/firebase";
-import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile} from "firebase/auth";
+import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification, signOut} from "firebase/auth";
 import "./login.css"
 function NameInput(props){
     return(
@@ -77,8 +77,17 @@ export default function Login(){
             await updateProfile(user, {
                 displayName: signUpValues.firstName,
             });
+            await sendEmailVerification(user);
+            signOut(auth)
+            .then(()=>{
+            navigate("/login");
+            })
+            .catch((err) => {
+                console.log(err);
+            })
             setSubmitDisable(false);
-            navigate("/");
+            setErrorMsg("Account created. Please check your email and verify your account, then log in.");
+            // navigate("/");
         })
         .catch((err) => {
             setSubmitDisable(false);
