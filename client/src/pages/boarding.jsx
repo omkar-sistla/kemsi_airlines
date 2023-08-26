@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "../components/nav_bar/nav_bar";
 export default function Boarding() {
+    window.scrollTo(0,0);
     return(
         <div className="guidelinepage">
         <NavBar/>

@@ -26,6 +26,7 @@ function createcontent(about){
     />)
 }
 export default function About(){
+    window.scrollTo(0,0);
     return(
         <div className="about_us">
             <NavBar/>

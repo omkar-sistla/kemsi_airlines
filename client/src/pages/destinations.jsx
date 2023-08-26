@@ -23,6 +23,7 @@ function createDestinations(destination){
     )
 }
 export default function Destinations(){
+    window.scrollTo(0,0);
     return(
         <div id="destinations_page">
             <NavBar/>

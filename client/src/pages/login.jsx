@@ -5,6 +5,7 @@ import { auth } from "../config/firebase";
 import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification, signOut} from "firebase/auth";
 import "./login.css"
 function NameInput(props){
+    window.scrollTo(0,0);
     return(
         <div id="name_input">
             <label>NAME</label>

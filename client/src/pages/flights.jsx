@@ -3,6 +3,7 @@ import './flights.css'
 import { bookingValuesExport } from "../components/booking/booking";
 var test = bookingValuesExport;
 export default function Flights(){
+    window.scrollTo(0,0);
     function getRandomNumberInRange(min, max) {
         const number = Math.floor(Math.random() * (max - min + 1)) + min;
         return number.toLocaleString('en-IN');
