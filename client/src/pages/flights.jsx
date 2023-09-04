@@ -1,7 +1,9 @@
 import React from "react";
 import './flights.css'
+import { useState } from "react";
 import { bookingValuesExport } from "../components/booking/booking";
 import flight_data from "../jsons/flight_data.json";
+import airport_data from "../jsons/airport_info.json"
 import { Link } from "react-router-dom";
 function checkflightdata(){
     if (bookingValuesExport.from==="" || bookingValuesExport.to===""){
@@ -14,16 +16,11 @@ function getRandomNumberInRange(min, max) {
     return number.toLocaleString('en-IN');
 }
 function possibleToCatch(currentFlight, nextFlight, flightDuration) {
-    // Parse the time strings in 24-hour format.
     const currentFlightTime = parseTime(currentFlight);
     const nextFlightTime = parseTime(nextFlight);
-    // Calculate the flight duration in minutes.
     const flightDurationMinutes = parseFlightDuration(flightDuration);
-    // Add one more hour for the minimum waiting period.
     const waitingPeriodMinutes = 60;
-    // Calculate the time when the current flight can leave.
     const currentFlightEndTime = new Date(currentFlightTime.getTime() + flightDurationMinutes * 60 * 1000 + waitingPeriodMinutes * 60 * 1000);
-    // Check if it's possible to catch the next flight.
     return currentFlightEndTime <= nextFlightTime;
 }
 function parseTime(timeString) {
@@ -31,8 +28,8 @@ function parseTime(timeString) {
     return new Date(0, 0, 0, hours, minutes);
 }
 function parseFlightDuration(durationString) {
-    const hoursMatch = durationString.match(/(\d+) hour/);
-    const minutesMatch = durationString.match(/(\d+) minute/);
+    const hoursMatch = durationString.match(/(\d+)h/);
+    const minutesMatch = durationString.match(/(\d+)min/);
     const hours = hoursMatch ? parseInt(hoursMatch[1], 10) : 0;
     const minutes = minutesMatch ? parseInt(minutesMatch[1], 10) : 0;
     return hours * 60 + minutes;
@@ -59,19 +56,15 @@ function calculateNewTime(time, durationString) {
     const durationMinutes = parseFlightDuration(durationString);
     const date = parseTime(time);
     const newTime = new Date(date.getTime() + durationMinutes * 60 * 1000);
-
     const hours = newTime.getHours();
     const minutes = newTime.getMinutes();
-
     const formattedHours = hours < 10 ? `0${hours}` : hours;
     const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
-
     return `${formattedHours}:${formattedMinutes}`;
 }
 function findRoutesWithMaxStops(startCity, endCity) {
     const maxStops = 3;
     const routes = [];
-
     function dfs(currentCity, stops, currentRoute) {
         if (stops > maxStops) {
             return;
@@ -104,7 +97,6 @@ function findRoutesWithMaxStops(startCity, endCity) {
             }
         }
     }
-
     dfs(startCity, 0, []);
     return routes;
 }
@@ -114,6 +106,10 @@ function createFlightNumbers(flight_number){
     )
 }
 function Flight(props){
+    const [viewActive, setViewActive] = useState(false);
+    const  toggleView = () =>{
+        setViewActive(!viewActive);
+    }
     return(
         <div className="flight_card">
             <div className="flight">
@@ -139,26 +135,24 @@ function Flight(props){
                             <p className="time">{props.arrivaltime}</p>
                             <p className="airport">{props.to.slice(-4,-1)}</p>
                         </div>
-                        
                     </div>
-                    <p className="view">VIEW FLIGHT DETAILS</p>
+                    <p className="view" onClick={toggleView}>VIEW FLIGHT DETAILS <i className={!viewActive ?"fa-solid fa-angle-down":"fa-solid fa-angle-up"}></i></p>
                 </div>
-                
                 <div className="faredetails">
                     <p className="class">{props.class}</p>
                     <p className="tag">Your price starts from</p>
                     <p className="inr">INR</p>
-                    <p className="price">{props.class === "Business Class" && getRandomNumberInRange(20000,24000)}
-                    {props.class === "Economy" && getRandomNumberInRange(3600,5800)}
-                    {props.class === "First Class" && getRandomNumberInRange(36000,42000)}</p>
+                    <p className="price">{props.class === "Business Class" && "23,568"}
+                    {props.class === "Economy" && "4,893"}
+                    {props.class === "First Class" && "41,258"}</p>
                 </div>      
             </div>
             <FlightRoute
                 route={props.route}
                 startingCity={props.from}
+                viewActive={viewActive}
             />
         </div>
-        
     )
 }
 function Createflight(flight,route){
@@ -178,57 +172,68 @@ function Createflight(flight,route){
         />
     )
 }
-function FlightRoute({ route, startingCity }) {
+function FlightRoute({ route, startingCity,viewActive }) {
     const flightDetails = [];
     for (let i = 0; i < route.length; i++) {
-      const currentFlight = route[i];
-      const previousFlight = i > 0 ? route[i - 1] : null;
-      const nextflight = i < route.length-1 ? route[i+1]:null;
-      const departureTime = currentFlight.time;
-      const arrivalTime = calculateNewTime(departureTime, currentFlight.flight_duration);
-      const layoff = nextflight && calculateLayoff(arrivalTime,nextflight.time);
-      flightDetails.push(
-        <div key={currentFlight.flight_number} className="flightinfo">
-          <p>{currentFlight.flight_number}</p>
-          <div className="departure">
-            <p>{departureTime}</p>
-            <p>{i === 0 ? startingCity : previousFlight.city}</p>
-          </div>
-          <div className="duration">
-            <p >{currentFlight.flight_duration}</p>
-          </div>
-          
-          <div className="arrival">
-            <p>{arrivalTime}</p>
-            <p>{currentFlight.city}</p>
-          </div>
-          <div className="layoff">
-            {layoff && <p>{layoff}</p>}
-          </div>          
-        </div>
-      );
+        const currentFlight = route[i];
+        const previousFlight = i > 0 ? route[i - 1] : null;
+        const nextflight = i < route.length-1 ? route[i+1]:null;
+        const departureTime = currentFlight.time;
+        const arrivalTime = calculateNewTime(departureTime, currentFlight.flight_duration);
+        const layoff = nextflight && calculateLayoff(arrivalTime,nextflight.time);
+        flightDetails.push(
+            <div key={currentFlight.flight_number} className="flightinfo">
+                <div className="departure">
+                    <p>{currentFlight.flight_number}</p>
+                    <p className="time_place">{departureTime} {i === 0 ? startingCity : previousFlight.city+"("+airport_data[previousFlight.city].code+")"}</p>
+                    <p className="airport">{i === 0 ? airport_data[startingCity.slice(0,-5)].airport : airport_data[previousFlight.city].airport}</p>
+                </div>
+                <div className="duration">
+                    <p >Flight Duration: {currentFlight.flight_duration}</p>
+                </div>
+                <div className="arrival">
+                    <p className="time_place">{arrivalTime} {currentFlight.city}({airport_data[currentFlight.city].code})</p>
+                    <p className="airport">{airport_data[currentFlight.city].airport}</p>
+                </div>
+                {layoff &&
+                <div className="layoff_sec">
+                    <p><i className="fa-solid fa-hotel"></i></p>
+                    <div className="layoff_det">
+                        <p className="layoff_time">{layoff} transit in </p>
+                        <p className="layoff_airport">{airport_data[currentFlight.city].airport} </p>
+                    </div>
+                </div>
+                }      
+            </div>
+        );
     }
-    return <div className="flightroute">{flightDetails}</div>;
+    return <div className={viewActive?"flightroute active":"flightroute"}>{flightDetails}</div>;
 }
 
 export default function Flights(){
     window.scrollTo(0,0);
     if(!checkflightdata()){
         return(
-            <div>
+            <div className="flights_page_error">
                 <h1>Oops! We encountered an issue with your booking.</h1>
                 <p>It seems something unexpected happened. This could be due to a page reload or incomplete booking information.</p>
                 <Link to="/">Go back to home page</Link>
             </div>
-
         )
     }
     const routes=findRoutesWithMaxStops(bookingValuesExport.from.slice(0,-5),bookingValuesExport.to.slice(0,-5));
     console.log(routes);
     return(
         <div className="flights_page">
-            <h1>Departing Flight</h1>
-            {routes.length > 0 ? routes.map((route) => Createflight(bookingValuesExport,route)) : <h1>No Flights Found</h1>}
+            <div className="logo">
+                <Link to="/"><img id="Logo" src="./assets/images/logo.png" alt="Logo of Kemsi Airlines"/></Link> 
+            </div>
+            <div className="flights_page_content">
+                <h2>Departing Flight</h2>
+                <h3>Select your flight from {bookingValuesExport.from.slice(0,-5)} to {bookingValuesExport.to.slice(0,-5)}</h3>
+                <h4>{routes.length} Flights found for your trip</h4>
+                {routes.length > 0 ? routes.map((route) => Createflight(bookingValuesExport,route)) : <h1>No Flights Found</h1>}
+            </div>
         </div>
     )
 

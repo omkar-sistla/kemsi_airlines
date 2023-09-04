@@ -1,28 +1,72 @@
+.flights_page_error{
+    font-family: 'montserrat';
+    width:90vw;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .flights_page{
-    margin-top: 100px;
+    font-family: 'montserrat';
+    background-color: rgb(255, 253, 251);
+}
+.flights_page .logo{
+    background-color: #E57C23;
+}
+.flights_page .logo img{
+    margin-left: 5vw;
+}
+.flights_page_content{
+    width: 90vw;
+    margin: auto;
+}
+.flights_page .flights_page_content h2{
+    font-size: 30px;
+    margin: 50px auto 10px auto;
+}
+.flights_page .flights_page_content h3{
+    font-size: 24px;
+    text-align: left;
+    font-weight: normal;
+    color: black;
+    margin: 10px auto 40px auto;
+}
+.flights_page .flights_page_content h4{
+    font-weight: normal;
 }
 .flight_card{
-    max-width: 90vw;
+    max-width: 100%;
     margin: auto;
     margin-top: 10px;
     padding: 20px;
     box-shadow: 0 0 5px rgb(144, 144, 144);
+    user-select: none;
+    background-color: white;
 }
 .flight{
     display: flex;
     justify-content: space-between;
-    font-family: 'montserrat';
+
     max-width: 100%;
     align-items: center;
 }
 .flight .flight_numbers{
     display: flex;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100px;
     height: 100px;
     background-color: rgb(222, 255, 222);
+    padding: 10px;
+}
+.flight .flight_numbers .flight_number{
+    margin: 1px 10px;
 }
 .flight .flightdetails_section{
     display: flex;
@@ -43,9 +87,12 @@
     font-size: small;
     cursor: pointer;
 }
-.flight .flight_numbers .flight_number{
-    margin: 0px 10px;
+.flight_card .flightdetails_section .view i{
+    transition: 0.3s;
+    rotate: 360deg;
+    transition: 0.3s;
 }
+
 .flight .fromside, .flight .toside{
     display: flex;
 
@@ -70,6 +117,7 @@
 .flight .faredetails{
     width: 15%;
     background-color: rgb(255, 235, 198);
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,27 +139,65 @@
     font-weight: bolder;
     margin: 0px auto;
 }
+.flight_card .flightroute{
+    display: none;
+}
+.flight_card .flightroute.active{
+    display: flex;
+    flex-direction: column;
+}
 .flight_card .flightroute .flightinfo .departure, 
 .flight_card .flightroute .flightinfo .arrival{
     display: flex;
-    gap: 20px;
-    background-color: orange;
+    flex-direction: column;
+    background-color: rgb(229, 248, 255);
+}
+.flight_card .flightroute .flightinfo .arrival p,
+.flight_card .flightroute .flightinfo .departure p{
+    margin: 5px;
+}
+.flight_card .flightroute .flightinfo .time_place{
+    font-size: larger;
+    font-weight: 600;
+}
+.flight_card .flightroute .flightinfo .airport{
+    font-size: small;
+}
+.flight_card .flightroute .flightinfo .arrival{
+    margin-bottom: 15px;
 }
 .flight_card .flightroute .flightinfo{
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
 }
 .flight_card .flightroute .flightinfo .duration{
-    background-color: aqua;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    font-size: small;
+    font-weight: bold;
 }
-.flight_card .flightroute .flightinfo .layoff{
-    background-color: red;
+.flight_card .flightroute .flightinfo .duration p{
+    margin: 8px;
 }
-.flight_card .flightroute{
+.flight_card .flightroute .flightinfo .layoff_sec{
     display: flex;
-    flex-direction: column;
+    background-color: rgb(255, 200, 200);
+    align-items: center;
 }
-@media(max-width:480px){
+.flight_card .flightroute .flightinfo .layoff_sec i{
+    font-size: x-large;
+    margin: 0px 20px;
+}
+.flight_card .flightroute .flightinfo .layoff_det p{
+    margin: 0px auto;
+}
+.flight_card .flightroute .flightinfo .layoff_det .layoff_time{
+    font-weight: bold;
+}
+
+@media(max-width:700px){
     .flight_card{
         max-width: 90vw;
         margin: auto;
@@ -148,5 +234,9 @@
     }
     .flight .middlepart .stops{
         margin: 0px;
+    }
+    .flight_card .flightroute .flightinfo .time_place{
+        font-size:medium;
+        font-weight: 600;
     }
 }

@@ -1,0 +1,21 @@
+{
+    "Ahmedabad": {"code": "AMD", "airport": "Sardar Vallabhbhai Patel International Airport"},
+    "Amritsar": {"code": "ATQ", "airport": "Amritsar International Airport"},
+    "Bengaluru": {"code": "BLR", "airport": "Kempegowda International Airport"},
+    "Chandigarh": {"code": "IXC", "airport": "Chandigarh International Airport"},
+    "Chennai": {"code": "MAA", "airport": "Chennai International Airport"},
+    "Goa": {"code": "GOI", "airport": "Goa International Airport"},
+    "Hyderabad": {"code": "HYD", "airport": "Rajiv Gandhi International Airport"},
+    "Jaipur": {"code": "JAI", "airport": "Jaipur International Airport"},
+    "Kochi": {"code": "COK", "airport": "Cochin International Airport"},
+    "Kolkata": {"code": "CCU", "airport": "Netaji Subhas Chandra Bose International Airport"},
+    "Kozhikode": {"code": "CCJ", "airport": "Calicut International Airport"},
+    "Madurai": {"code": "IXM", "airport": "Madurai International Airport"},
+    "Mangalore": {"code": "IXE", "airport": "Mangalore International Airport"},
+    "Mumbai": {"code": "BOM", "airport": "Chhatrapati Shivaji Maharaj International Airport"},
+    "New Delhi": {"code": "DEL", "airport": "Indira Gandhi International Airport"},
+    "Pune": {"code": "PNQ", "airport": "Pune International Airport"},
+    "Srinagar": {"code": "SXR", "airport": "Srinagar International Airport"},
+    "Thiruvananthapuram": {"code": "TRV", "airport": "Trivandrum International Airport"},
+    "Vijayawada": {"code": "VGA", "airport": "Vijayawada International Airport"}
+}
