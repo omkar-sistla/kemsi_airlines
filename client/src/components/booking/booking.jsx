@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
 import {useNavigate} from "react-router-dom";
+import airports from "../../jsons/airports.json";
 import './booking.css';
 import Select from "../select_input/select";
 export let bookingValuesExport={roundTrip:true,
@@ -13,27 +14,7 @@ export let bookingValuesExport={roundTrip:true,
     promo:"",
     departDay:"",
     returnDay:""};
-const countries=[
-    ['AMD', 'Ahmedabad', 'Sardar Vallabhbhai Patel International Airport'],
-    ['ATQ', 'Amritsar', 'Amritsar International Airport'],
-    ['BLR', 'Bengaluru', 'Kempegowda International Airport'],
-    ['IXC', 'Chandigarh', 'Chandigarh International Airport'],
-    ['MAA', 'Chennai', 'Chennai International Airport'],
-    ['GOI', 'Goa', 'Goa International Airport'],
-    ['HYD', 'Hyderabad', 'Rajiv Gandhi International Airport'],
-    ['JAI', 'Jaipur', 'Jaipur International Airport'],
-    ['COK', 'Kochi', 'Cochin International Airport'],
-    ['CCU', 'Kolkata', 'Netaji Subhas Chandra Bose International Airport'],
-    ['CCJ', 'Kozhikode', 'Calicut International Airport'],
-    ['IXM', 'Madurai', 'Madurai International Airport'],
-    ['IXE', 'Mangalore', 'Mangalore International Airport'],
-    ['BOM', 'Mumbai', 'Chhatrapati Shivaji Maharaj International Airport'],
-    ['DEL', 'New Delhi', 'Indira Gandhi International Airport'],
-    ['PNQ', 'Pune', 'Pune International Airport'],
-    ['SXR', 'Srinagar', 'Srinagar International Airport'],
-    ['TRV', 'Thiruvananthapuram', 'Trivandrum International Airport'],
-    ['VGA', 'Vijayawada', 'Vijayawada International Airport']
-  ];
+
 function Booking(){
     const [bookingValues, setBookingValues] = useState({
         roundTrip:true,
@@ -115,12 +96,12 @@ function Booking(){
                 <div className="input_group">
                     <div className="details input_container"> 
                         <label>From</label>
-                        <Select options={countries.filter((option)=>option[1].toLowerCase()!==bookingValues.to.toLowerCase().slice(0,-5))} 
+                        <Select options={airports.filter((option)=>option[1].toLowerCase()!==bookingValues.to.toLowerCase().slice(0,-5))} 
                         placeholder="From" onSelect={handleFromOption}/> 
                     </div>
                     <div className="details input_container"> 
                         <label>To</label>
-                        <Select options={countries.filter((option)=>option[1].toLowerCase()!==bookingValues.from.toLowerCase().slice(0,-5))} 
+                        <Select options={airports.filter((option)=>option[1].toLowerCase()!==bookingValues.from.toLowerCase().slice(0,-5))} 
                         placeholder="To" onSelect={handleToOption} class="to"/> 
                     </div>
                 </div>

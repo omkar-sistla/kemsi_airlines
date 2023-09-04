@@ -1,60 +1,152 @@
-.flight{
-    display: flex;
-    max-width: fit-content;
-    padding: 20px;
-    font-family: 'montserrat';
-    margin: auto;
-    box-shadow: 0 0 5px rgb(144, 144, 144);
+.flights_page{
     margin-top: 100px;
 }
-.flight .flightdetails{
-    display: flex;
-    gap: 50px;
-    align-items: center;
-    padding: 10px;
+.flight_card{
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgb(144, 144, 144);
 }
-.flight .fromside, .flight .toside, .faredetails{
+.flight{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'montserrat';
+    max-width: 100%;
+    align-items: center;
+}
+.flight .flight_numbers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(222, 255, 222);
+}
+.flight .flightdetails_section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    width: 85%;
 }
-.faredetails{
-    background-color: rgb(250, 240, 221);
-    padding: 10px;
-    width: 100px;
+.flight .flightdetails{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
-.flight .fromside *, .flight .toside *{
-    margin: 0;
+.flight .flightdetails_section .view{
+    margin-bottom: 0px;
+    padding: 3px;
+    border-bottom: 3px solid orange;
+    font-size: small;
+    cursor: pointer;
+}
+.flight .flight_numbers .flight_number{
+    margin: 0px 10px;
+}
+.flight .fromside, .flight .toside{
+    display: flex;
+
+    flex-direction: column;
+}
+.flight .fromside p, .flight .toside p, .flight .middlepart p{
+    margin: 0px 10px;
 }
 .flight .time{
-    font-size: 35px;
-    margin: 0;
+    font-size: xx-large;
 }
-.middlepart{
+.flight .middlepart{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 5px;
-    width: 100%;
-    border: 1px solid black;
+    align-self: flex-end;
 }
-.dottedline{
-    height: 1px;
-    width: 100%;
-    border-top: 1px dashed black;
+.flight .middlepart .stops{
+    margin-bottom: 15px;
+    font-size: small;
+}
+.flight .faredetails{
+    width: 15%;
+    background-color: rgb(255, 235, 198);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flight .faredetails .class, .flight .faredetails .tag{
+    font-size: 16px;
+    margin: 5px auto;
+}
+.flight .faredetails .tag{
+    font-size: 10px;
+}
+.flight .faredetails .inr{
+    margin-bottom: 0px;
+    font-weight: bolder;
+}
+.flight .faredetails .price{
+    font-size: 32px;
+    font-weight: bolder;
+    margin: 0px auto;
+}
+.flight_card .flightroute .flightinfo .departure, 
+.flight_card .flightroute .flightinfo .arrival{
+    display: flex;
+    gap: 20px;
+    background-color: orange;
+}
+.flight_card .flightroute .flightinfo{
+    display: flex;
+    flex-direction: column;
+}
+.flight_card .flightroute .flightinfo .duration{
+    background-color: aqua;
+}
+.flight_card .flightroute .flightinfo .layoff{
+    background-color: red;
+}
+.flight_card .flightroute{
+    display: flex;
+    flex-direction: column;
 }
 @media(max-width:480px){
-    .flight .time{
-        font-size: 22px;
-        border: 1px solid black;
+    .flight_card{
+        max-width: 90vw;
+        margin: auto;
+        margin-top: 10px;
+        padding: 10px;
+        box-shadow: 0 0 5px rgb(144, 144, 144);
+    }
+    .flight .flight_numbers{
+        display: none;
+    }
+    .flight .flightdetails_section{
+        width: 100%;
+    }
+    .flight .date, .flight .airport{
+        font-size: 12px;
+    }
+    .flight .faredetails{
+        width: 100%;
+    }
+    .flight .faredetails .price{
+        font-size: 25px;
     }
     .flight{
-        max-width: 80vw;
+        max-width: 100%;
         gap: 10px;
         flex-direction: column;
         padding: 10px;
     }
     .flight .flightdetails{
         gap: 10px;
+    }
+    .flight .time{
+        font-size: 20px;
+    }
+    .flight .middlepart .stops{
+        margin: 0px;
     }
 }

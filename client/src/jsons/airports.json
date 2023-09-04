@@ -1,0 +1,21 @@
+[
+    ["AMD", "Ahmedabad", "Sardar Vallabhbhai Patel International Airport"],
+    ["ATQ", "Amritsar", "Amritsar International Airport"],
+    ["BLR", "Bengaluru", "Kempegowda International Airport"],
+    ["IXC", "Chandigarh", "Chandigarh International Airport"],
+    ["MAA", "Chennai", "Chennai International Airport"],
+    ["GOI", "Goa", "Goa International Airport"],
+    ["HYD", "Hyderabad", "Rajiv Gandhi International Airport"],
+    ["JAI", "Jaipur", "Jaipur International Airport"],
+    ["COK", "Kochi", "Cochin International Airport"],
+    ["CCU", "Kolkata", "Netaji Subhas Chandra Bose International Airport"],
+    ["CCJ", "Kozhikode", "Calicut International Airport"],
+    ["IXM", "Madurai", "Madurai International Airport"],
+    ["IXE", "Mangalore", "Mangalore International Airport"],
+    ["BOM", "Mumbai", "Chhatrapati Shivaji Maharaj International Airport"],
+    ["DEL", "New Delhi", "Indira Gandhi International Airport"],
+    ["PNQ", "Pune", "Pune International Airport"],
+    ["SXR", "Srinagar", "Srinagar International Airport"],
+    ["TRV", "Thiruvananthapuram", "Trivandrum International Airport"],
+    ["VGA", "Vijayawada", "Vijayawada International Airport"]
+  ]
