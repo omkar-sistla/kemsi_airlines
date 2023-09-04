@@ -222,7 +222,6 @@ export default function Flights(){
         )
     }
     const routes=findRoutesWithMaxStops(bookingValuesExport.from.slice(0,-5),bookingValuesExport.to.slice(0,-5));
-    console.log(routes);
     return(
         <div className="flights_page">
             <div className="logo">
@@ -238,4 +237,3 @@ export default function Flights(){
     )
 
 }
-console.log(checkflightdata())
