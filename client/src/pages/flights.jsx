@@ -11,9 +11,17 @@ function checkflightdata(){
     }
     return true
 }
-function getRandomNumberInRange(min, max) {
-    const number = Math.floor(Math.random() * (max - min + 1)) + min;
-    return number.toLocaleString('en-IN');
+function calc_fare(route){
+    let economy = 0;
+    let business_class = 0;
+    let first_class = 0;
+
+    for (let i = 0; i < route.length; i++) {
+        economy += route[i].economy;
+        business_class += route[i].business_class;
+        first_class += route[i].first_class;
+    }
+    return [Math.round(economy/route.length), Math.round(business_class/route.length), Math.round(first_class/route.length)];
 }
 function possibleToCatch(currentFlight, nextFlight, flightDuration) {
     const currentFlightTime = parseTime(currentFlight);
@@ -81,12 +89,12 @@ function findRoutesWithMaxStops(startCity, endCity) {
             const flights = destinations[destination];
 
             for (const flight of flights) {
-                const { flight_number, departure_time, flight_duration } = flight;
+                const { flight_number, departure_time, flight_duration, economy, business_class, first_class } = flight;
 
                 if (currentRoute.length === 0) {
-                    currentRoute.push({ city: destination, flight_number, time: departure_time, flight_duration });
+                    currentRoute.push({ city: destination, flight_number, time: departure_time, flight_duration, economy, business_class, first_class });
                 } else if (possibleToCatch(currentRoute[currentRoute.length - 1].time, departure_time, flight_duration)) {
-                    currentRoute.push({ city: destination, flight_number, time: departure_time, flight_duration });
+                    currentRoute.push({ city: destination, flight_number, time: departure_time, flight_duration, economy, business_class, first_class });
                 } else {
                     continue;
                 }
@@ -142,9 +150,9 @@ function Flight(props){
                     <p className="class">{props.class}</p>
                     <p className="tag">Your price starts from</p>
                     <p className="inr">INR</p>
-                    <p className="price">{props.class === "Business Class" && "23,568"}
-                    {props.class === "Economy" && "4,893"}
-                    {props.class === "First Class" && "41,258"}</p>
+                    <p className="price">{props.class === "Business Class" && props.business_class.toLocaleString('en-In')}
+                    {props.class === "Economy" && props.economy.toLocaleString('en-In')}
+                    {props.class === "First Class" && props.first_class.toLocaleString('en-In')}</p>
                 </div>      
             </div>
             <FlightRoute
@@ -169,6 +177,9 @@ function Createflight(flight,route){
             flight_numbers={route.map(flight => flight.flight_number)}
             stops={route.length<2 ? "Non Stop" : route.length-1+" Stops"}
             class={flight.class}
+            economy={calc_fare(route)[0]}
+            business_class={calc_fare(route)[1]}
+            first_class={calc_fare(route)[2]}
         />
     )
 }
@@ -222,6 +233,8 @@ export default function Flights(){
         )
     }
     const routes=findRoutesWithMaxStops(bookingValuesExport.from.slice(0,-5),bookingValuesExport.to.slice(0,-5));
+console.log(routes);
+
     return(
         <div className="flights_page">
             <div className="logo">

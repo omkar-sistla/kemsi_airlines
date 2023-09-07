@@ -1,520 +1,2466 @@
 {
     "Ahmedabad": {
         "Mumbai": [
-            {"flight_number": "KM 001", "departure_time": "08:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 002", "departure_time": "10:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 003", "departure_time": "14:00", "flight_duration": "1h 30min"}
-        ],        
+            {
+                "flight_number": "KM 001",
+                "departure_time": "08:00",
+                "flight_duration": "1h 30min",
+                "economy": 5624,
+                "business_class": 23462,
+                "first_class": 44854
+            },
+            {
+                "flight_number": "KM 002",
+                "departure_time": "10:00",
+                "flight_duration": "1h 30min",
+                "economy": 5624,
+                "business_class": 23462,
+                "first_class": 44854
+            },
+            {
+                "flight_number": "KM 003",
+                "departure_time": "14:00",
+                "flight_duration": "1h 30min",
+                "economy": 5624,
+                "business_class": 23462,
+                "first_class": 44854
+            }
+        ],
         "New Delhi": [
-            {"flight_number": "KM 004", "departure_time": "09:30", "flight_duration": "2h"},
-            {"flight_number": "KM 005", "departure_time": "11:30", "flight_duration": "2h"},
-            {"flight_number": "KM 006", "departure_time": "13:30", "flight_duration": "2h"}
-        ],        
+            {
+                "flight_number": "KM 004",
+                "departure_time": "09:30",
+                "flight_duration": "2h",
+                "economy": 4843,
+                "business_class": 22750,
+                "first_class": 44925
+            },
+            {
+                "flight_number": "KM 005",
+                "departure_time": "11:30",
+                "flight_duration": "2h",
+                "economy": 4843,
+                "business_class": 22750,
+                "first_class": 44925
+            },
+            {
+                "flight_number": "KM 006",
+                "departure_time": "13:30",
+                "flight_duration": "2h",
+                "economy": 4843,
+                "business_class": 22750,
+                "first_class": 44925
+            }
+        ],
         "Chennai": [
-            {"flight_number": "KM 007", "departure_time": "10:15", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 008", "departure_time": "14:15", "flight_duration": "2h 30min"}
-        ],        
+            {
+                "flight_number": "KM 007",
+                "departure_time": "10:15",
+                "flight_duration": "2h 30min",
+                "economy": 6146,
+                "business_class": 24473,
+                "first_class": 42843
+            },
+            {
+                "flight_number": "KM 008",
+                "departure_time": "14:15",
+                "flight_duration": "2h 30min",
+                "economy": 6146,
+                "business_class": 24473,
+                "first_class": 42843
+            }
+        ],
         "Hyderabad": [
-            {"flight_number": "KM 009", "departure_time": "11:00", "flight_duration": "2h"},
-            {"flight_number": "KM 010", "departure_time": "13:00", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 009",
+                "departure_time": "11:00",
+                "flight_duration": "2h",
+                "economy": 7214,
+                "business_class": 24027,
+                "first_class": 39835
+            },
+            {
+                "flight_number": "KM 010",
+                "departure_time": "13:00",
+                "flight_duration": "2h",
+                "economy": 7214,
+                "business_class": 24027,
+                "first_class": 39835
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 011", "departure_time": "12:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 012", "departure_time": "15:00", "flight_duration": "2h 30min"}
-        ]    
+            {
+                "flight_number": "KM 011",
+                "departure_time": "12:00",
+                "flight_duration": "2h 30min",
+                "economy": 6438,
+                "business_class": 25340,
+                "first_class": 40977
+            },
+            {
+                "flight_number": "KM 012",
+                "departure_time": "15:00",
+                "flight_duration": "2h 30min",
+                "economy": 6438,
+                "business_class": 25340,
+                "first_class": 40977
+            }
+        ]
     },
     "Amritsar": {
         "New Delhi": [
-            {"flight_number": "KM 013", "departure_time": "08:30", "flight_duration": "1h"},
-            {"flight_number": "KM 014", "departure_time": "10:30", "flight_duration": "1h"},
-            {"flight_number": "KM 015", "departure_time": "12:30", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 013",
+                "departure_time": "08:30",
+                "flight_duration": "1h",
+                "economy": 7362,
+                "business_class": 24101,
+                "first_class": 41274
+            },
+            {
+                "flight_number": "KM 014",
+                "departure_time": "10:30",
+                "flight_duration": "1h",
+                "economy": 7362,
+                "business_class": 24101,
+                "first_class": 41274
+            },
+            {
+                "flight_number": "KM 015",
+                "departure_time": "12:30",
+                "flight_duration": "1h",
+                "economy": 7362,
+                "business_class": 24101,
+                "first_class": 41274
+            }
         ],
         "Chandhigarh": [
-            {"flight_number": "KM 016", "departure_time": "09:15", "flight_duration": "30min"},
-            {"flight_number": "KM 017", "departure_time": "11:15", "flight_duration": "30min"}
+            {
+                "flight_number": "KM 016",
+                "departure_time": "09:15",
+                "flight_duration": "30min",
+                "economy": 6696,
+                "business_class": 25498,
+                "first_class": 40313
+            },
+            {
+                "flight_number": "KM 017",
+                "departure_time": "11:15",
+                "flight_duration": "30min",
+                "economy": 6696,
+                "business_class": 25498,
+                "first_class": 40313
+            }
         ],
         "Jaipur": [
-            {"flight_number": "KM 018", "departure_time": "10:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 019", "departure_time": "12:00", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 018",
+                "departure_time": "10:00",
+                "flight_duration": "1h 30min",
+                "economy": 5861,
+                "business_class": 23431,
+                "first_class": 44701
+            },
+            {
+                "flight_number": "KM 019",
+                "departure_time": "12:00",
+                "flight_duration": "1h 30min",
+                "economy": 5861,
+                "business_class": 23431,
+                "first_class": 44701
+            }
         ],
         "Srinagar": [
-            {"flight_number": "KM 020", "departure_time": "11:30", "flight_duration": "1h"},
-            {"flight_number": "KM 021", "departure_time": "13:30", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 020",
+                "departure_time": "11:30",
+                "flight_duration": "1h",
+                "economy": 6586,
+                "business_class": 23188,
+                "first_class": 41999
+            },
+            {
+                "flight_number": "KM 021",
+                "departure_time": "13:30",
+                "flight_duration": "1h",
+                "economy": 6586,
+                "business_class": 23188,
+                "first_class": 41999
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 022", "departure_time": "12:45", "flight_duration": "2h"},
-            {"flight_number": "KM 023", "departure_time": "14:45", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 022",
+                "departure_time": "12:45",
+                "flight_duration": "2h",
+                "economy": 6524,
+                "business_class": 22723,
+                "first_class": 40425
+            },
+            {
+                "flight_number": "KM 023",
+                "departure_time": "14:45",
+                "flight_duration": "2h",
+                "economy": 6524,
+                "business_class": 22723,
+                "first_class": 40425
+            }
+        ]
     },
     "Bengaluru": {
         "Chennai": [
-            {"flight_number": "KM 024", "departure_time": "08:15", "flight_duration": "1h"},
-            {"flight_number": "KM 025", "departure_time": "11:15", "flight_duration": "1h"},
-            {"flight_number": "KM 026", "departure_time": "14:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 024",
+                "departure_time": "08:15",
+                "flight_duration": "1h",
+                "economy": 5187,
+                "business_class": 22838,
+                "first_class": 41672
+            },
+            {
+                "flight_number": "KM 025",
+                "departure_time": "11:15",
+                "flight_duration": "1h",
+                "economy": 5187,
+                "business_class": 22838,
+                "first_class": 41672
+            },
+            {
+                "flight_number": "KM 026",
+                "departure_time": "14:15",
+                "flight_duration": "1h",
+                "economy": 5187,
+                "business_class": 22838,
+                "first_class": 41672
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 027", "departure_time": "09:00", "flight_duration": "1h"},
-            {"flight_number": "KM 028", "departure_time": "12:00", "flight_duration": "1h"},
-            {"flight_number": "KM 029", "departure_time": "15:00", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 027",
+                "departure_time": "09:00",
+                "flight_duration": "1h",
+                "economy": 4536,
+                "business_class": 25725,
+                "first_class": 43042
+            },
+            {
+                "flight_number": "KM 028",
+                "departure_time": "12:00",
+                "flight_duration": "1h",
+                "economy": 4536,
+                "business_class": 25725,
+                "first_class": 43042
+            },
+            {
+                "flight_number": "KM 029",
+                "departure_time": "15:00",
+                "flight_duration": "1h",
+                "economy": 4536,
+                "business_class": 25725,
+                "first_class": 43042
+            }
         ],
         "Kochi": [
-            {"flight_number": "KM 030", "departure_time": "09:45", "flight_duration": "1h"},
-            {"flight_number": "KM 031", "departure_time": "12:45", "flight_duration": "1h"},
-            {"flight_number": "KM 032", "departure_time": "15:45", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 030",
+                "departure_time": "09:45",
+                "flight_duration": "1h",
+                "economy": 7207,
+                "business_class": 23409,
+                "first_class": 41380
+            },
+            {
+                "flight_number": "KM 031",
+                "departure_time": "12:45",
+                "flight_duration": "1h",
+                "economy": 7207,
+                "business_class": 23409,
+                "first_class": 41380
+            },
+            {
+                "flight_number": "KM 032",
+                "departure_time": "15:45",
+                "flight_duration": "1h",
+                "economy": 7207,
+                "business_class": 23409,
+                "first_class": 41380
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 033", "departure_time": "10:30", "flight_duration": "2h"},
-            {"flight_number": "KM 034", "departure_time": "13:30", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 033",
+                "departure_time": "10:30",
+                "flight_duration": "2h",
+                "economy": 7281,
+                "business_class": 23226,
+                "first_class": 42026
+            },
+            {
+                "flight_number": "KM 034",
+                "departure_time": "13:30",
+                "flight_duration": "2h",
+                "economy": 7281,
+                "business_class": 23226,
+                "first_class": 42026
+            }
         ],
         "Mangalore": [
-            {"flight_number": "KM 035", "departure_time": "11:15", "flight_duration": "1h"},
-            {"flight_number": "KM 036", "departure_time": "14:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 035",
+                "departure_time": "11:15",
+                "flight_duration": "1h",
+                "economy": 6124,
+                "business_class": 23505,
+                "first_class": 40519
+            },
+            {
+                "flight_number": "KM 036",
+                "departure_time": "14:15",
+                "flight_duration": "1h",
+                "economy": 6124,
+                "business_class": 23505,
+                "first_class": 40519
+            }
         ],
         "Mumbai": [
-            {"flight_number": "KM 037", "departure_time": "12:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 038", "departure_time": "15:00", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 037",
+                "departure_time": "12:00",
+                "flight_duration": "1h 30min",
+                "economy": 6420,
+                "business_class": 22896,
+                "first_class": 41450
+            },
+            {
+                "flight_number": "KM 038",
+                "departure_time": "15:00",
+                "flight_duration": "1h 30min",
+                "economy": 6420,
+                "business_class": 22896,
+                "first_class": 41450
+            }
         ],
         "New Delhi": [
-            {"flight_number": "KM 039", "departure_time": "13:30", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 040", "departure_time": "16:30", "flight_duration": "2h 30min"}
+            {
+                "flight_number": "KM 039",
+                "departure_time": "13:30",
+                "flight_duration": "2h 30min",
+                "economy": 4562,
+                "business_class": 22233,
+                "first_class": 42145
+            },
+            {
+                "flight_number": "KM 040",
+                "departure_time": "16:30",
+                "flight_duration": "2h 30min",
+                "economy": 4562,
+                "business_class": 22233,
+                "first_class": 42145
+            }
         ],
         "Pune": [
-            {"flight_number": "KM 041", "departure_time": "14:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 042", "departure_time": "17:15", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 041",
+                "departure_time": "14:15",
+                "flight_duration": "1h 30min",
+                "economy": 5182,
+                "business_class": 22629,
+                "first_class": 41092
+            },
+            {
+                "flight_number": "KM 042",
+                "departure_time": "17:15",
+                "flight_duration": "1h 30min",
+                "economy": 5182,
+                "business_class": 22629,
+                "first_class": 41092
+            }
         ],
         "Thiruvananthapuram": [
-            {"flight_number": "KM 043", "departure_time": "15:00", "flight_duration": "2h"},
-            {"flight_number": "KM 044", "departure_time": "18:00", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 043",
+                "departure_time": "15:00",
+                "flight_duration": "2h",
+                "economy": 7019,
+                "business_class": 25064,
+                "first_class": 43056
+            },
+            {
+                "flight_number": "KM 044",
+                "departure_time": "18:00",
+                "flight_duration": "2h",
+                "economy": 7019,
+                "business_class": 25064,
+                "first_class": 43056
+            }
+        ]
     },
     "Chandigarh": {
         "New Delhi": [
-            {"flight_number": "KM 045", "departure_time": "08:45", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 046", "departure_time": "10:45", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 045",
+                "departure_time": "08:45",
+                "flight_duration": "1h 15min",
+                "economy": 7354,
+                "business_class": 23486,
+                "first_class": 41685
+            },
+            {
+                "flight_number": "KM 046",
+                "departure_time": "10:45",
+                "flight_duration": "1h 15min",
+                "economy": 7354,
+                "business_class": 23486,
+                "first_class": 41685
+            }
         ],
         "Amritsar": [
-            {"flight_number": "KM 047", "departure_time": "09:30", "flight_duration": "30min"},
-            {"flight_number": "KM 048", "departure_time": "11:30", "flight_duration": "30min"}
+            {
+                "flight_number": "KM 047",
+                "departure_time": "09:30",
+                "flight_duration": "30min",
+                "economy": 6163,
+                "business_class": 24977,
+                "first_class": 39765
+            },
+            {
+                "flight_number": "KM 048",
+                "departure_time": "11:30",
+                "flight_duration": "30min",
+                "economy": 6163,
+                "business_class": 24977,
+                "first_class": 39765
+            }
         ],
         "Jaipur": [
-            {"flight_number": "KM 049", "departure_time": "10:15", "flight_duration": "1h"},
-            {"flight_number": "KM 050", "departure_time": "12:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 049",
+                "departure_time": "10:15",
+                "flight_duration": "1h",
+                "economy": 5092,
+                "business_class": 22301,
+                "first_class": 42006
+            },
+            {
+                "flight_number": "KM 050",
+                "departure_time": "12:15",
+                "flight_duration": "1h",
+                "economy": 5092,
+                "business_class": 22301,
+                "first_class": 42006
+            }
         ],
         "Srinagar": [
-            {"flight_number": "KM 051", "departure_time": "11:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 052", "departure_time": "13:45", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 051",
+                "departure_time": "11:45",
+                "flight_duration": "1h 30min",
+                "economy": 7483,
+                "business_class": 24956,
+                "first_class": 41189
+            },
+            {
+                "flight_number": "KM 052",
+                "departure_time": "13:45",
+                "flight_duration": "1h 30min",
+                "economy": 7483,
+                "business_class": 24956,
+                "first_class": 41189
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 053", "departure_time": "13:00", "flight_duration": "2h"},
-            {"flight_number": "KM 054", "departure_time": "15:00", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 053",
+                "departure_time": "13:00",
+                "flight_duration": "2h",
+                "economy": 4955,
+                "business_class": 22459,
+                "first_class": 41668
+            },
+            {
+                "flight_number": "KM 054",
+                "departure_time": "15:00",
+                "flight_duration": "2h",
+                "economy": 4955,
+                "business_class": 22459,
+                "first_class": 41668
+            }
+        ]
     },
     "Chennai": {
         "Bengaluru": [
-            {"flight_number": "KM 055", "departure_time": "08:15", "flight_duration": "1h"},
-            {"flight_number": "KM 056", "departure_time": "11:15", "flight_duration": "1h"},
-            {"flight_number": "KM 057", "departure_time": "14:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 055",
+                "departure_time": "08:15",
+                "flight_duration": "1h",
+                "economy": 6643,
+                "business_class": 24860,
+                "first_class": 44855
+            },
+            {
+                "flight_number": "KM 056",
+                "departure_time": "11:15",
+                "flight_duration": "1h",
+                "economy": 6643,
+                "business_class": 24860,
+                "first_class": 44855
+            },
+            {
+                "flight_number": "KM 057",
+                "departure_time": "14:15",
+                "flight_duration": "1h",
+                "economy": 6643,
+                "business_class": 24860,
+                "first_class": 44855
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 058", "departure_time": "09:00", "flight_duration": "1h"},
-            {"flight_number": "KM 059", "departure_time": "12:00", "flight_duration": "1h"},
-            {"flight_number": "KM 060", "departure_time": "15:00", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 058",
+                "departure_time": "09:00",
+                "flight_duration": "1h",
+                "economy": 6710,
+                "business_class": 23135,
+                "first_class": 44938
+            },
+            {
+                "flight_number": "KM 059",
+                "departure_time": "12:00",
+                "flight_duration": "1h",
+                "economy": 6710,
+                "business_class": 23135,
+                "first_class": 44938
+            },
+            {
+                "flight_number": "KM 060",
+                "departure_time": "15:00",
+                "flight_duration": "1h",
+                "economy": 6710,
+                "business_class": 23135,
+                "first_class": 44938
+            }
         ],
         "Kochi": [
-            {"flight_number": "KM 061", "departure_time": "09:45", "flight_duration": "1h"},
-            {"flight_number": "KM 062", "departure_time": "12:45", "flight_duration": "1h"},
-            {"flight_number": "KM 063", "departure_time": "15:45", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 061",
+                "departure_time": "09:45",
+                "flight_duration": "1h",
+                "economy": 6013,
+                "business_class": 23655,
+                "first_class": 43118
+            },
+            {
+                "flight_number": "KM 062",
+                "departure_time": "12:45",
+                "flight_duration": "1h",
+                "economy": 6013,
+                "business_class": 23655,
+                "first_class": 43118
+            },
+            {
+                "flight_number": "KM 063",
+                "departure_time": "15:45",
+                "flight_duration": "1h",
+                "economy": 6013,
+                "business_class": 23655,
+                "first_class": 43118
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 064", "departure_time": "10:30", "flight_duration": "2h"},
-            {"flight_number": "KM 065", "departure_time": "13:30", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 064",
+                "departure_time": "10:30",
+                "flight_duration": "2h",
+                "economy": 4908,
+                "business_class": 25062,
+                "first_class": 39930
+            },
+            {
+                "flight_number": "KM 065",
+                "departure_time": "13:30",
+                "flight_duration": "2h",
+                "economy": 4908,
+                "business_class": 25062,
+                "first_class": 39930
+            }
         ],
         "Madurai": [
-            {"flight_number": "KM 066", "departure_time": "11:15", "flight_duration": "30min"},
-            {"flight_number": "KM 067", "departure_time": "14:15", "flight_duration": "30min"}
+            {
+                "flight_number": "KM 066",
+                "departure_time": "11:15",
+                "flight_duration": "30min",
+                "economy": 6619,
+                "business_class": 23571,
+                "first_class": 41922
+            },
+            {
+                "flight_number": "KM 067",
+                "departure_time": "14:15",
+                "flight_duration": "30min",
+                "economy": 6619,
+                "business_class": 23571,
+                "first_class": 41922
+            }
         ]
     },
     "Goa": {
         "Mumbai": [
-            {"flight_number": "KM 068", "departure_time": "08:30", "flight_duration": "1h"},
-            {"flight_number": "KM 069", "departure_time": "10:30", "flight_duration": "1h"},
-            {"flight_number": "KM 070", "departure_time": "12:30", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 068",
+                "departure_time": "08:30",
+                "flight_duration": "1h",
+                "economy": 7142,
+                "business_class": 22630,
+                "first_class": 43446
+            },
+            {
+                "flight_number": "KM 069",
+                "departure_time": "10:30",
+                "flight_duration": "1h",
+                "economy": 7142,
+                "business_class": 22630,
+                "first_class": 43446
+            },
+            {
+                "flight_number": "KM 070",
+                "departure_time": "12:30",
+                "flight_duration": "1h",
+                "economy": 7142,
+                "business_class": 22630,
+                "first_class": 43446
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 071", "departure_time": "09:15", "flight_duration": "1h"},
-            {"flight_number": "KM 072", "departure_time": "11:15", "flight_duration": "1h"},
-            {"flight_number": "KM 073", "departure_time": "13:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 071",
+                "departure_time": "09:15",
+                "flight_duration": "1h",
+                "economy": 4896,
+                "business_class": 22744,
+                "first_class": 40871
+            },
+            {
+                "flight_number": "KM 072",
+                "departure_time": "11:15",
+                "flight_duration": "1h",
+                "economy": 4896,
+                "business_class": 22744,
+                "first_class": 40871
+            },
+            {
+                "flight_number": "KM 073",
+                "departure_time": "13:15",
+                "flight_duration": "1h",
+                "economy": 4896,
+                "business_class": 22744,
+                "first_class": 40871
+            }
         ],
         "Kochi": [
-            {"flight_number": "KM 074", "departure_time": "10:00", "flight_duration": "1h"},
-            {"flight_number": "KM 075", "departure_time": "12:00", "flight_duration": "1h"},
-            {"flight_number": "KM 076", "departure_time": "14:00", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 074",
+                "departure_time": "10:00",
+                "flight_duration": "1h",
+                "economy": 6104,
+                "business_class": 22973,
+                "first_class": 40688
+            },
+            {
+                "flight_number": "KM 075",
+                "departure_time": "12:00",
+                "flight_duration": "1h",
+                "economy": 6104,
+                "business_class": 22973,
+                "first_class": 40688
+            },
+            {
+                "flight_number": "KM 076",
+                "departure_time": "14:00",
+                "flight_duration": "1h",
+                "economy": 6104,
+                "business_class": 22973,
+                "first_class": 40688
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 077", "departure_time": "10:45", "flight_duration": "2h"},
-            {"flight_number": "KM 078", "departure_time": "13:45", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 077",
+                "departure_time": "10:45",
+                "flight_duration": "2h",
+                "economy": 5997,
+                "business_class": 23224,
+                "first_class": 38778
+            },
+            {
+                "flight_number": "KM 078",
+                "departure_time": "13:45",
+                "flight_duration": "2h",
+                "economy": 5997,
+                "business_class": 23224,
+                "first_class": 38778
+            }
         ],
         "Pune": [
-            {"flight_number": "KM 079", "departure_time": "11:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 080", "departure_time": "14:30", "flight_duration": "1h 30min"}
-        ]    
+            {
+                "flight_number": "KM 079",
+                "departure_time": "11:30",
+                "flight_duration": "1h 30min",
+                "economy": 5471,
+                "business_class": 23310,
+                "first_class": 43727
+            },
+            {
+                "flight_number": "KM 080",
+                "departure_time": "14:30",
+                "flight_duration": "1h 30min",
+                "economy": 5471,
+                "business_class": 23310,
+                "first_class": 43727
+            }
+        ]
     },
     "Hyderabad": {
         "Bengaluru": [
-            {"flight_number": "KM 081", "departure_time": "08:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 082", "departure_time": "11:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 083", "departure_time": "14:30", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 081",
+                "departure_time": "08:30",
+                "flight_duration": "1h 30min",
+                "economy": 6564,
+                "business_class": 24694,
+                "first_class": 38037
+            },
+            {
+                "flight_number": "KM 082",
+                "departure_time": "11:30",
+                "flight_duration": "1h 30min",
+                "economy": 6564,
+                "business_class": 24694,
+                "first_class": 38037
+            },
+            {
+                "flight_number": "KM 083",
+                "departure_time": "14:30",
+                "flight_duration": "1h 30min",
+                "economy": 6564,
+                "business_class": 24694,
+                "first_class": 38037
+            }
         ],
         "Chennai": [
-            {"flight_number": "KM 084", "departure_time": "09:15", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 085", "departure_time": "12:15", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 086", "departure_time": "15:15", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 084",
+                "departure_time": "09:15",
+                "flight_duration": "1h 15min",
+                "economy": 5807,
+                "business_class": 25737,
+                "first_class": 42880
+            },
+            {
+                "flight_number": "KM 085",
+                "departure_time": "12:15",
+                "flight_duration": "1h 15min",
+                "economy": 5807,
+                "business_class": 25737,
+                "first_class": 42880
+            },
+            {
+                "flight_number": "KM 086",
+                "departure_time": "15:15",
+                "flight_duration": "1h 15min",
+                "economy": 5807,
+                "business_class": 25737,
+                "first_class": 42880
+            }
         ],
         "Kochi": [
-            {"flight_number": "KM 087", "departure_time": "10:00", "flight_duration": "1h"},
-            {"flight_number": "KM 088", "departure_time": "13:00", "flight_duration": "1h"},
-            {"flight_number": "KM 089", "departure_time": "16:00", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 087",
+                "departure_time": "10:00",
+                "flight_duration": "1h",
+                "economy": 6190,
+                "business_class": 24234,
+                "first_class": 40891
+            },
+            {
+                "flight_number": "KM 088",
+                "departure_time": "13:00",
+                "flight_duration": "1h",
+                "economy": 6190,
+                "business_class": 24234,
+                "first_class": 40891
+            },
+            {
+                "flight_number": "KM 089",
+                "departure_time": "16:00",
+                "flight_duration": "1h",
+                "economy": 6190,
+                "business_class": 24234,
+                "first_class": 40891
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 090", "departure_time": "10:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 091", "departure_time": "13:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 092", "departure_time": "16:45", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 090",
+                "departure_time": "10:45",
+                "flight_duration": "1h 30min",
+                "economy": 6712,
+                "business_class": 23472,
+                "first_class": 40123
+            },
+            {
+                "flight_number": "KM 091",
+                "departure_time": "13:45",
+                "flight_duration": "1h 30min",
+                "economy": 6712,
+                "business_class": 23472,
+                "first_class": 40123
+            },
+            {
+                "flight_number": "KM 092",
+                "departure_time": "16:45",
+                "flight_duration": "1h 30min",
+                "economy": 6712,
+                "business_class": 23472,
+                "first_class": 40123
+            }
         ],
         "Mumbai": [
-            {"flight_number": "KM 093", "departure_time": "11:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 094", "departure_time": "14:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 095", "departure_time": "17:30", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 093",
+                "departure_time": "11:30",
+                "flight_duration": "1h 30min",
+                "economy": 6048,
+                "business_class": 23228,
+                "first_class": 38580
+            },
+            {
+                "flight_number": "KM 094",
+                "departure_time": "14:30",
+                "flight_duration": "1h 30min",
+                "economy": 6048,
+                "business_class": 23228,
+                "first_class": 38580
+            },
+            {
+                "flight_number": "KM 095",
+                "departure_time": "17:30",
+                "flight_duration": "1h 30min",
+                "economy": 6048,
+                "business_class": 23228,
+                "first_class": 38580
+            }
         ],
         "New Delhi": [
-            {"flight_number": "KM 096", "departure_time": "13:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 097", "departure_time": "16:00", "flight_duration": "2h 30min"}
+            {
+                "flight_number": "KM 096",
+                "departure_time": "13:00",
+                "flight_duration": "2h 30min",
+                "economy": 7237,
+                "business_class": 22194,
+                "first_class": 39190
+            },
+            {
+                "flight_number": "KM 097",
+                "departure_time": "16:00",
+                "flight_duration": "2h 30min",
+                "economy": 7237,
+                "business_class": 22194,
+                "first_class": 39190
+            }
         ],
         "Pune": [
-            {"flight_number": "KM 098", "departure_time": "14:30", "flight_duration": "1h 45min"},
-            {"flight_number": "KM 099", "departure_time": "17:30", "flight_duration": "1h 45min"}
+            {
+                "flight_number": "KM 098",
+                "departure_time": "14:30",
+                "flight_duration": "1h 45min",
+                "economy": 4579,
+                "business_class": 23436,
+                "first_class": 38449
+            },
+            {
+                "flight_number": "KM 099",
+                "departure_time": "17:30",
+                "flight_duration": "1h 45min",
+                "economy": 4579,
+                "business_class": 23436,
+                "first_class": 38449
+            }
         ],
         "Vijayawada": [
-            {"flight_number": "KM 100", "departure_time": "15:15", "flight_duration": "45min"},
-            {"flight_number": "KM 101", "departure_time": "18:15", "flight_duration": "45min"}
-        ]    
+            {
+                "flight_number": "KM 100",
+                "departure_time": "15:15",
+                "flight_duration": "45min",
+                "economy": 7444,
+                "business_class": 24817,
+                "first_class": 42206
+            },
+            {
+                "flight_number": "KM 101",
+                "departure_time": "18:15",
+                "flight_duration": "45min",
+                "economy": 7444,
+                "business_class": 24817,
+                "first_class": 42206
+            }
+        ]
     },
     "Jaipur": {
         "New Delhi": [
-            {"flight_number": "KM 102", "departure_time": "08:45", "flight_duration": "1h"},
-            {"flight_number": "KM 103", "departure_time": "10:45", "flight_duration": "1h"},
-            {"flight_number": "KM 104", "departure_time": "12:45", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 102",
+                "departure_time": "08:45",
+                "flight_duration": "1h",
+                "economy": 7152,
+                "business_class": 24633,
+                "first_class": 41582
+            },
+            {
+                "flight_number": "KM 103",
+                "departure_time": "10:45",
+                "flight_duration": "1h",
+                "economy": 7152,
+                "business_class": 24633,
+                "first_class": 41582
+            },
+            {
+                "flight_number": "KM 104",
+                "departure_time": "12:45",
+                "flight_duration": "1h",
+                "economy": 7152,
+                "business_class": 24633,
+                "first_class": 41582
+            }
         ],
         "Amritsar": [
-            {"flight_number": "KM 105", "departure_time": "09:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 106", "departure_time": "11:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 107", "departure_time": "13:30", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 105",
+                "departure_time": "09:30",
+                "flight_duration": "1h 30min",
+                "economy": 6840,
+                "business_class": 24065,
+                "first_class": 44407
+            },
+            {
+                "flight_number": "KM 106",
+                "departure_time": "11:30",
+                "flight_duration": "1h 30min",
+                "economy": 6840,
+                "business_class": 24065,
+                "first_class": 44407
+            },
+            {
+                "flight_number": "KM 107",
+                "departure_time": "13:30",
+                "flight_duration": "1h 30min",
+                "economy": 6840,
+                "business_class": 24065,
+                "first_class": 44407
+            }
         ],
         "Chandigarh": [
-            {"flight_number": "KM 108", "departure_time": "10:15", "flight_duration": "1h"},
-            {"flight_number": "KM 109", "departure_time": "12:15", "flight_duration": "1h"},
-            {"flight_number": "KM 110", "departure_time": "14:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 108",
+                "departure_time": "10:15",
+                "flight_duration": "1h",
+                "economy": 4891,
+                "business_class": 22566,
+                "first_class": 39618
+            },
+            {
+                "flight_number": "KM 109",
+                "departure_time": "12:15",
+                "flight_duration": "1h",
+                "economy": 4891,
+                "business_class": 22566,
+                "first_class": 39618
+            },
+            {
+                "flight_number": "KM 110",
+                "departure_time": "14:15",
+                "flight_duration": "1h",
+                "economy": 4891,
+                "business_class": 22566,
+                "first_class": 39618
+            }
         ],
         "Srinagar": [
-            {"flight_number": "KM 111", "departure_time": "11:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 112", "departure_time": "13:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 113", "departure_time": "15:45", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 111",
+                "departure_time": "11:45",
+                "flight_duration": "1h 30min",
+                "economy": 4813,
+                "business_class": 24655,
+                "first_class": 39670
+            },
+            {
+                "flight_number": "KM 112",
+                "departure_time": "13:45",
+                "flight_duration": "1h 30min",
+                "economy": 4813,
+                "business_class": 24655,
+                "first_class": 39670
+            },
+            {
+                "flight_number": "KM 113",
+                "departure_time": "15:45",
+                "flight_duration": "1h 30min",
+                "economy": 4813,
+                "business_class": 24655,
+                "first_class": 39670
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 114", "departure_time": "13:00", "flight_duration": "2h"},
-            {"flight_number": "KM 115", "departure_time": "15:00", "flight_duration": "2h"},
-            {"flight_number": "KM 116", "departure_time": "17:00", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 114",
+                "departure_time": "13:00",
+                "flight_duration": "2h",
+                "economy": 6975,
+                "business_class": 23740,
+                "first_class": 44750
+            },
+            {
+                "flight_number": "KM 115",
+                "departure_time": "15:00",
+                "flight_duration": "2h",
+                "economy": 6975,
+                "business_class": 23740,
+                "first_class": 44750
+            },
+            {
+                "flight_number": "KM 116",
+                "departure_time": "17:00",
+                "flight_duration": "2h",
+                "economy": 6975,
+                "business_class": 23740,
+                "first_class": 44750
+            }
+        ]
     },
     "Kochi": {
         "Bengaluru": [
-            {"flight_number": "KM 117", "departure_time": "08:30", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 118", "departure_time": "11:30", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 119", "departure_time": "14:30", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 117",
+                "departure_time": "08:30",
+                "flight_duration": "1h 15min",
+                "economy": 5457,
+                "business_class": 22561,
+                "first_class": 40568
+            },
+            {
+                "flight_number": "KM 118",
+                "departure_time": "11:30",
+                "flight_duration": "1h 15min",
+                "economy": 5457,
+                "business_class": 22561,
+                "first_class": 40568
+            },
+            {
+                "flight_number": "KM 119",
+                "departure_time": "14:30",
+                "flight_duration": "1h 15min",
+                "economy": 5457,
+                "business_class": 22561,
+                "first_class": 40568
+            }
         ],
         "Chennai": [
-            {"flight_number": "KM 120", "departure_time": "09:15", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 121", "departure_time": "12:15", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 122", "departure_time": "15:15", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 120",
+                "departure_time": "09:15",
+                "flight_duration": "1h 15min",
+                "economy": 6064,
+                "business_class": 23391,
+                "first_class": 44642
+            },
+            {
+                "flight_number": "KM 121",
+                "departure_time": "12:15",
+                "flight_duration": "1h 15min",
+                "economy": 6064,
+                "business_class": 23391,
+                "first_class": 44642
+            },
+            {
+                "flight_number": "KM 122",
+                "departure_time": "15:15",
+                "flight_duration": "1h 15min",
+                "economy": 6064,
+                "business_class": 23391,
+                "first_class": 44642
+            }
         ],
         "Goa": [
-            {"flight_number": "KM 123", "departure_time": "10:00", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 124", "departure_time": "13:00", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 125", "departure_time": "16:00", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 123",
+                "departure_time": "10:00",
+                "flight_duration": "1h 15min",
+                "economy": 7477,
+                "business_class": 22429,
+                "first_class": 43638
+            },
+            {
+                "flight_number": "KM 124",
+                "departure_time": "13:00",
+                "flight_duration": "1h 15min",
+                "economy": 7477,
+                "business_class": 22429,
+                "first_class": 43638
+            },
+            {
+                "flight_number": "KM 125",
+                "departure_time": "16:00",
+                "flight_duration": "1h 15min",
+                "economy": 7477,
+                "business_class": 22429,
+                "first_class": 43638
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 126", "departure_time": "10:45", "flight_duration": "1h"},
-            {"flight_number": "KM 127", "departure_time": "13:45", "flight_duration": "1h"},
-            {"flight_number": "KM 128", "departure_time": "16:45", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 126",
+                "departure_time": "10:45",
+                "flight_duration": "1h",
+                "economy": 4645,
+                "business_class": 25527,
+                "first_class": 41857
+            },
+            {
+                "flight_number": "KM 127",
+                "departure_time": "13:45",
+                "flight_duration": "1h",
+                "economy": 4645,
+                "business_class": 25527,
+                "first_class": 41857
+            },
+            {
+                "flight_number": "KM 128",
+                "departure_time": "16:45",
+                "flight_duration": "1h",
+                "economy": 4645,
+                "business_class": 25527,
+                "first_class": 41857
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 129", "departure_time": "11:30", "flight_duration": "2h"},
-            {"flight_number": "KM 130", "departure_time": "14:30", "flight_duration": "2h"},
-            {"flight_number": "KM 131", "departure_time": "17:30", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 129",
+                "departure_time": "11:30",
+                "flight_duration": "2h",
+                "economy": 6984,
+                "business_class": 23777,
+                "first_class": 44040
+            },
+            {
+                "flight_number": "KM 130",
+                "departure_time": "14:30",
+                "flight_duration": "2h",
+                "economy": 6984,
+                "business_class": 23777,
+                "first_class": 44040
+            },
+            {
+                "flight_number": "KM 131",
+                "departure_time": "17:30",
+                "flight_duration": "2h",
+                "economy": 6984,
+                "business_class": 23777,
+                "first_class": 44040
+            }
+        ]
     },
     "Kolkata": {
         "Ahmedabad": [
-            {"flight_number": "KM 132", "departure_time": "08:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 133", "departure_time": "11:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 134", "departure_time": "15:00", "flight_duration": "2h 30min"}
+            {
+                "flight_number": "KM 132",
+                "departure_time": "08:00",
+                "flight_duration": "2h 30min",
+                "economy": 5450,
+                "business_class": 23635,
+                "first_class": 44089
+            },
+            {
+                "flight_number": "KM 133",
+                "departure_time": "11:00",
+                "flight_duration": "2h 30min",
+                "economy": 5450,
+                "business_class": 23635,
+                "first_class": 44089
+            },
+            {
+                "flight_number": "KM 134",
+                "departure_time": "15:00",
+                "flight_duration": "2h 30min",
+                "economy": 5450,
+                "business_class": 23635,
+                "first_class": 44089
+            }
         ],
         "Amritsar": [
-            {"flight_number": "KM 135", "departure_time": "08:45", "flight_duration": "2h"},
-            {"flight_number": "KM 136", "departure_time": "11:45", "flight_duration": "2h"},
-            {"flight_number": "KM 137", "departure_time": "15:45", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 135",
+                "departure_time": "08:45",
+                "flight_duration": "2h",
+                "economy": 7296,
+                "business_class": 23619,
+                "first_class": 42970
+            },
+            {
+                "flight_number": "KM 136",
+                "departure_time": "11:45",
+                "flight_duration": "2h",
+                "economy": 7296,
+                "business_class": 23619,
+                "first_class": 42970
+            },
+            {
+                "flight_number": "KM 137",
+                "departure_time": "15:45",
+                "flight_duration": "2h",
+                "economy": 7296,
+                "business_class": 23619,
+                "first_class": 42970
+            }
         ],
         "Bengaluru": [
-            {"flight_number": "KM 138", "departure_time": "09:30", "flight_duration": "2h"},
-            {"flight_number": "KM 139", "departure_time": "12:30", "flight_duration": "2h"},
-            {"flight_number": "KM 140", "departure_time": "16:30", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 138",
+                "departure_time": "09:30",
+                "flight_duration": "2h",
+                "economy": 4927,
+                "business_class": 25504,
+                "first_class": 42099
+            },
+            {
+                "flight_number": "KM 139",
+                "departure_time": "12:30",
+                "flight_duration": "2h",
+                "economy": 4927,
+                "business_class": 25504,
+                "first_class": 42099
+            },
+            {
+                "flight_number": "KM 140",
+                "departure_time": "16:30",
+                "flight_duration": "2h",
+                "economy": 4927,
+                "business_class": 25504,
+                "first_class": 42099
+            }
         ],
         "Chandigarh": [
-            {"flight_number": "KM 141", "departure_time": "10:15", "flight_duration": "2h"},
-            {"flight_number": "KM 142", "departure_time": "13:15", "flight_duration": "2h"},
-            {"flight_number": "KM 143", "departure_time": "17:15", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 141",
+                "departure_time": "10:15",
+                "flight_duration": "2h",
+                "economy": 6629,
+                "business_class": 23082,
+                "first_class": 42698
+            },
+            {
+                "flight_number": "KM 142",
+                "departure_time": "13:15",
+                "flight_duration": "2h",
+                "economy": 6629,
+                "business_class": 23082,
+                "first_class": 42698
+            },
+            {
+                "flight_number": "KM 143",
+                "departure_time": "17:15",
+                "flight_duration": "2h",
+                "economy": 6629,
+                "business_class": 23082,
+                "first_class": 42698
+            }
         ],
         "Chennai": [
-            {"flight_number": "KM 144", "departure_time": "11:00", "flight_duration": "2h"},
-            {"flight_number": "KM 145", "departure_time": "14:00", "flight_duration": "2h"},
-            {"flight_number": "KM 146", "departure_time": "18:00", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 144",
+                "departure_time": "11:00",
+                "flight_duration": "2h",
+                "economy": 7474,
+                "business_class": 24865,
+                "first_class": 42333
+            },
+            {
+                "flight_number": "KM 145",
+                "departure_time": "14:00",
+                "flight_duration": "2h",
+                "economy": 7474,
+                "business_class": 24865,
+                "first_class": 42333
+            },
+            {
+                "flight_number": "KM 146",
+                "departure_time": "18:00",
+                "flight_duration": "2h",
+                "economy": 7474,
+                "business_class": 24865,
+                "first_class": 42333
+            }
         ],
         "Goa": [
-            {"flight_number": "KM 147", "departure_time": "11:45", "flight_duration": "2h"},
-            {"flight_number": "KM 148", "departure_time": "14:45", "flight_duration": "2h"},
-            {"flight_number": "KM 149", "departure_time": "18:45", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 147",
+                "departure_time": "11:45",
+                "flight_duration": "2h",
+                "economy": 6133,
+                "business_class": 22155,
+                "first_class": 38937
+            },
+            {
+                "flight_number": "KM 148",
+                "departure_time": "14:45",
+                "flight_duration": "2h",
+                "economy": 6133,
+                "business_class": 22155,
+                "first_class": 38937
+            },
+            {
+                "flight_number": "KM 149",
+                "departure_time": "18:45",
+                "flight_duration": "2h",
+                "economy": 6133,
+                "business_class": 22155,
+                "first_class": 38937
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 150", "departure_time": "12:30", "flight_duration": "2h"},
-            {"flight_number": "KM 151", "departure_time": "15:30", "flight_duration": "2h"},
-            {"flight_number": "KM 152", "departure_time": "19:30", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 150",
+                "departure_time": "12:30",
+                "flight_duration": "2h",
+                "economy": 6193,
+                "business_class": 22817,
+                "first_class": 42929
+            },
+            {
+                "flight_number": "KM 151",
+                "departure_time": "15:30",
+                "flight_duration": "2h",
+                "economy": 6193,
+                "business_class": 22817,
+                "first_class": 42929
+            },
+            {
+                "flight_number": "KM 152",
+                "departure_time": "19:30",
+                "flight_duration": "2h",
+                "economy": 6193,
+                "business_class": 22817,
+                "first_class": 42929
+            }
         ],
         "Jaipur": [
-            {"flight_number": "KM 153", "departure_time": "13:15", "flight_duration": "2h"},
-            {"flight_number": "KM 154", "departure_time": "16:15", "flight_duration": "2h"},
-            {"flight_number": "KM 155", "departure_time": "20:15", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 153",
+                "departure_time": "13:15",
+                "flight_duration": "2h",
+                "economy": 6642,
+                "business_class": 24920,
+                "first_class": 42350
+            },
+            {
+                "flight_number": "KM 154",
+                "departure_time": "16:15",
+                "flight_duration": "2h",
+                "economy": 6642,
+                "business_class": 24920,
+                "first_class": 42350
+            },
+            {
+                "flight_number": "KM 155",
+                "departure_time": "20:15",
+                "flight_duration": "2h",
+                "economy": 6642,
+                "business_class": 24920,
+                "first_class": 42350
+            }
         ],
         "Kochi": [
-            {"flight_number": "KM 156", "departure_time": "14:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 157", "departure_time": "17:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 158", "departure_time": "21:00", "flight_duration": "2h 30min"}
+            {
+                "flight_number": "KM 156",
+                "departure_time": "14:00",
+                "flight_duration": "2h 30min",
+                "economy": 5817,
+                "business_class": 23924,
+                "first_class": 43841
+            },
+            {
+                "flight_number": "KM 157",
+                "departure_time": "17:00",
+                "flight_duration": "2h 30min",
+                "economy": 5817,
+                "business_class": 23924,
+                "first_class": 43841
+            },
+            {
+                "flight_number": "KM 158",
+                "departure_time": "21:00",
+                "flight_duration": "2h 30min",
+                "economy": 5817,
+                "business_class": 23924,
+                "first_class": 43841
+            }
         ],
         "Srinagar": [
-            {"flight_number": "KM 159", "departure_time": "15:00", "flight_duration": "2h"},
-            {"flight_number": "KM 160", "departure_time": "18:00", "flight_duration": "2h"},
-            {"flight_number": "KM 161", "departure_time": "22:00", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 159",
+                "departure_time": "15:00",
+                "flight_duration": "2h",
+                "economy": 6509,
+                "business_class": 24179,
+                "first_class": 39504
+            },
+            {
+                "flight_number": "KM 160",
+                "departure_time": "18:00",
+                "flight_duration": "2h",
+                "economy": 6509,
+                "business_class": 24179,
+                "first_class": 39504
+            },
+            {
+                "flight_number": "KM 161",
+                "departure_time": "22:00",
+                "flight_duration": "2h",
+                "economy": 6509,
+                "business_class": 24179,
+                "first_class": 39504
+            }
+        ]
     },
     "Kozhikode": {
         "Chennai": [
-            {"flight_number": "KM 162", "departure_time": "08:45", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 163", "departure_time": "11:45", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 164", "departure_time": "14:45", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 162",
+                "departure_time": "08:45",
+                "flight_duration": "1h 15min",
+                "economy": 5141,
+                "business_class": 25061,
+                "first_class": 43510
+            },
+            {
+                "flight_number": "KM 163",
+                "departure_time": "11:45",
+                "flight_duration": "1h 15min",
+                "economy": 5141,
+                "business_class": 25061,
+                "first_class": 43510
+            },
+            {
+                "flight_number": "KM 164",
+                "departure_time": "14:45",
+                "flight_duration": "1h 15min",
+                "economy": 5141,
+                "business_class": 25061,
+                "first_class": 43510
+            }
         ],
         "Kochi": [
-            {"flight_number": "KM 165", "departure_time": "09:30", "flight_duration": "45min"},
-            {"flight_number": "KM 166", "departure_time": "12:30", "flight_duration": "45min"},
-            {"flight_number": "KM 167", "departure_time": "15:30", "flight_duration": "45min"}
+            {
+                "flight_number": "KM 165",
+                "departure_time": "09:30",
+                "flight_duration": "45min",
+                "economy": 7308,
+                "business_class": 22399,
+                "first_class": 39779
+            },
+            {
+                "flight_number": "KM 166",
+                "departure_time": "12:30",
+                "flight_duration": "45min",
+                "economy": 7308,
+                "business_class": 22399,
+                "first_class": 39779
+            },
+            {
+                "flight_number": "KM 167",
+                "departure_time": "15:30",
+                "flight_duration": "45min",
+                "economy": 7308,
+                "business_class": 22399,
+                "first_class": 39779
+            }
         ],
         "Thiruvananthapuram": [
-            {"flight_number": "KM 168", "departure_time": "10:15", "flight_duration": "45min"},
-            {"flight_number": "KM 169", "departure_time": "13:15", "flight_duration": "45min"},
-            {"flight_number": "KM 170", "departure_time": "16:15", "flight_duration": "45min"}
-        ]    
+            {
+                "flight_number": "KM 168",
+                "departure_time": "10:15",
+                "flight_duration": "45min",
+                "economy": 5395,
+                "business_class": 25088,
+                "first_class": 38574
+            },
+            {
+                "flight_number": "KM 169",
+                "departure_time": "13:15",
+                "flight_duration": "45min",
+                "economy": 5395,
+                "business_class": 25088,
+                "first_class": 38574
+            },
+            {
+                "flight_number": "KM 170",
+                "departure_time": "16:15",
+                "flight_duration": "45min",
+                "economy": 5395,
+                "business_class": 25088,
+                "first_class": 38574
+            }
+        ]
     },
     "Madurai": {
         "Chennai": [
-            {"flight_number": "KM 171", "departure_time": "08:45", "flight_duration": "45min"},
-            {"flight_number": "KM 172", "departure_time": "11:45", "flight_duration": "45min"},
-            {"flight_number": "KM 173", "departure_time": "14:45", "flight_duration": "45min"}
-        ]    
+            {
+                "flight_number": "KM 171",
+                "departure_time": "08:45",
+                "flight_duration": "45min",
+                "economy": 5908,
+                "business_class": 23058,
+                "first_class": 39422
+            },
+            {
+                "flight_number": "KM 172",
+                "departure_time": "11:45",
+                "flight_duration": "45min",
+                "economy": 5908,
+                "business_class": 23058,
+                "first_class": 39422
+            },
+            {
+                "flight_number": "KM 173",
+                "departure_time": "14:45",
+                "flight_duration": "45min",
+                "economy": 5908,
+                "business_class": 23058,
+                "first_class": 39422
+            }
+        ]
     },
     "Mangalore": {
         "Bengaluru": [
-            {"flight_number": "KM 174", "departure_time": "08:30", "flight_duration": "45min"},
-            {"flight_number": "KM 175", "departure_time": "11:30", "flight_duration": "45min"},
-            {"flight_number": "KM 176", "departure_time": "14:30", "flight_duration": "45min"}
-        ]    
+            {
+                "flight_number": "KM 174",
+                "departure_time": "08:30",
+                "flight_duration": "45min",
+                "economy": 5241,
+                "business_class": 24492,
+                "first_class": 43746
+            },
+            {
+                "flight_number": "KM 175",
+                "departure_time": "11:30",
+                "flight_duration": "45min",
+                "economy": 5241,
+                "business_class": 24492,
+                "first_class": 43746
+            },
+            {
+                "flight_number": "KM 176",
+                "departure_time": "14:30",
+                "flight_duration": "45min",
+                "economy": 5241,
+                "business_class": 24492,
+                "first_class": 43746
+            }
+        ]
     },
     "Mumbai": {
         "Ahmedabad": [
-            {"flight_number": "KM 177", "departure_time": "08:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 178", "departure_time": "10:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 179", "departure_time": "14:00", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 177",
+                "departure_time": "08:00",
+                "flight_duration": "1h 30min",
+                "economy": 5935,
+                "business_class": 22978,
+                "first_class": 40529
+            },
+            {
+                "flight_number": "KM 178",
+                "departure_time": "10:00",
+                "flight_duration": "1h 30min",
+                "economy": 5935,
+                "business_class": 22978,
+                "first_class": 40529
+            },
+            {
+                "flight_number": "KM 179",
+                "departure_time": "14:00",
+                "flight_duration": "1h 30min",
+                "economy": 5935,
+                "business_class": 22978,
+                "first_class": 40529
+            }
         ],
         "Bengaluru": [
-            {"flight_number": "KM 180", "departure_time": "08:45", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 181", "departure_time": "11:00", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 182", "departure_time": "14:15", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 180",
+                "departure_time": "08:45",
+                "flight_duration": "1h 15min",
+                "economy": 5703,
+                "business_class": 24965,
+                "first_class": 42344
+            },
+            {
+                "flight_number": "KM 181",
+                "departure_time": "11:00",
+                "flight_duration": "1h 15min",
+                "economy": 5703,
+                "business_class": 24965,
+                "first_class": 42344
+            },
+            {
+                "flight_number": "KM 182",
+                "departure_time": "14:15",
+                "flight_duration": "1h 15min",
+                "economy": 5703,
+                "business_class": 24965,
+                "first_class": 42344
+            }
         ],
         "Chennai": [
-            {"flight_number": "KM 183", "departure_time": "09:30", "flight_duration": "1h 45min"},
-            {"flight_number": "KM 184", "departure_time": "12:45", "flight_duration": "1h 45min"},
-            {"flight_number": "KM 185", "departure_time": "16:00", "flight_duration": "1h 45min"}
+            {
+                "flight_number": "KM 183",
+                "departure_time": "09:30",
+                "flight_duration": "1h 45min",
+                "economy": 4789,
+                "business_class": 23475,
+                "first_class": 41508
+            },
+            {
+                "flight_number": "KM 184",
+                "departure_time": "12:45",
+                "flight_duration": "1h 45min",
+                "economy": 4789,
+                "business_class": 23475,
+                "first_class": 41508
+            },
+            {
+                "flight_number": "KM 185",
+                "departure_time": "16:00",
+                "flight_duration": "1h 45min",
+                "economy": 4789,
+                "business_class": 23475,
+                "first_class": 41508
+            }
         ],
         "Delhi": [
-            {"flight_number": "KM 186", "departure_time": "10:15", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 187", "departure_time": "13:30", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 188", "departure_time": "17:45", "flight_duration": "2h 15min"}
+            {
+                "flight_number": "KM 186",
+                "departure_time": "10:15",
+                "flight_duration": "2h 15min",
+                "economy": 5400,
+                "business_class": 25457,
+                "first_class": 39785
+            },
+            {
+                "flight_number": "KM 187",
+                "departure_time": "13:30",
+                "flight_duration": "2h 15min",
+                "economy": 5400,
+                "business_class": 25457,
+                "first_class": 39785
+            },
+            {
+                "flight_number": "KM 188",
+                "departure_time": "17:45",
+                "flight_duration": "2h 15min",
+                "economy": 5400,
+                "business_class": 25457,
+                "first_class": 39785
+            }
         ],
         "Goa": [
-            {"flight_number": "KM 189", "departure_time": "11:00", "flight_duration": "1h"},
-            {"flight_number": "KM 190", "departure_time": "14:15", "flight_duration": "1h"},
-            {"flight_number": "KM 191", "departure_time": "17:30", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 189",
+                "departure_time": "11:00",
+                "flight_duration": "1h",
+                "economy": 6685,
+                "business_class": 23475,
+                "first_class": 38326
+            },
+            {
+                "flight_number": "KM 190",
+                "departure_time": "14:15",
+                "flight_duration": "1h",
+                "economy": 6685,
+                "business_class": 23475,
+                "first_class": 38326
+            },
+            {
+                "flight_number": "KM 191",
+                "departure_time": "17:30",
+                "flight_duration": "1h",
+                "economy": 6685,
+                "business_class": 23475,
+                "first_class": 38326
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 192", "departure_time": "11:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 193", "departure_time": "15:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 194", "departure_time": "18:15", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 192",
+                "departure_time": "11:45",
+                "flight_duration": "1h 30min",
+                "economy": 6074,
+                "business_class": 23952,
+                "first_class": 43183
+            },
+            {
+                "flight_number": "KM 193",
+                "departure_time": "15:00",
+                "flight_duration": "1h 30min",
+                "economy": 6074,
+                "business_class": 23952,
+                "first_class": 43183
+            },
+            {
+                "flight_number": "KM 194",
+                "departure_time": "18:15",
+                "flight_duration": "1h 30min",
+                "economy": 6074,
+                "business_class": 23952,
+                "first_class": 43183
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 195", "departure_time": "12:30", "flight_duration": "2h"},
-            {"flight_number": "KM 196", "departure_time": "15:45", "flight_duration": "2h"},
-            {"flight_number": "KM 197", "departure_time": "19:00", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 195",
+                "departure_time": "12:30",
+                "flight_duration": "2h",
+                "economy": 5204,
+                "business_class": 25126,
+                "first_class": 38272
+            },
+            {
+                "flight_number": "KM 196",
+                "departure_time": "15:45",
+                "flight_duration": "2h",
+                "economy": 5204,
+                "business_class": 25126,
+                "first_class": 38272
+            },
+            {
+                "flight_number": "KM 197",
+                "departure_time": "19:00",
+                "flight_duration": "2h",
+                "economy": 5204,
+                "business_class": 25126,
+                "first_class": 38272
+            }
         ],
         "Pune": [
-            {"flight_number": "KM 198", "departure_time": "13:15", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 199", "departure_time": "16:30", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 200", "departure_time": "20:45", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 198",
+                "departure_time": "13:15",
+                "flight_duration": "1h 15min",
+                "economy": 7142,
+                "business_class": 24757,
+                "first_class": 43126
+            },
+            {
+                "flight_number": "KM 199",
+                "departure_time": "16:30",
+                "flight_duration": "1h 15min",
+                "economy": 7142,
+                "business_class": 24757,
+                "first_class": 43126
+            },
+            {
+                "flight_number": "KM 200",
+                "departure_time": "20:45",
+                "flight_duration": "1h 15min",
+                "economy": 7142,
+                "business_class": 24757,
+                "first_class": 43126
+            }
         ],
         "Srinagar": [
-            {"flight_number": "KM 201", "departure_time": "14:15", "flight_duration": "2h"},
-            {"flight_number": "KM 202", "departure_time": "17:30", "flight_duration": "2h"},
-            {"flight_number": "KM 203", "departure_time": "21:45", "flight_duration": "2h"}
-        ]    
+            {
+                "flight_number": "KM 201",
+                "departure_time": "14:15",
+                "flight_duration": "2h",
+                "economy": 7096,
+                "business_class": 23061,
+                "first_class": 39245
+            },
+            {
+                "flight_number": "KM 202",
+                "departure_time": "17:30",
+                "flight_duration": "2h",
+                "economy": 7096,
+                "business_class": 23061,
+                "first_class": 39245
+            },
+            {
+                "flight_number": "KM 203",
+                "departure_time": "21:45",
+                "flight_duration": "2h",
+                "economy": 7096,
+                "business_class": 23061,
+                "first_class": 39245
+            }
+        ]
     },
     "New Delhi": {
         "Ahmedabad": [
-            {"flight_number": "KM 204", "departure_time": "08:30", "flight_duration": "2h"},
-            {"flight_number": "KM 205", "departure_time": "11:30", "flight_duration": "2h"},
-            {"flight_number": "KM 206", "departure_time": "14:30", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 204",
+                "departure_time": "08:30",
+                "flight_duration": "2h",
+                "economy": 5100,
+                "business_class": 25924,
+                "first_class": 44458
+            },
+            {
+                "flight_number": "KM 205",
+                "departure_time": "11:30",
+                "flight_duration": "2h",
+                "economy": 5100,
+                "business_class": 25924,
+                "first_class": 44458
+            },
+            {
+                "flight_number": "KM 206",
+                "departure_time": "14:30",
+                "flight_duration": "2h",
+                "economy": 5100,
+                "business_class": 25924,
+                "first_class": 44458
+            }
         ],
         "Amritsar": [
-            {"flight_number": "KM 207", "departure_time": "09:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 208", "departure_time": "12:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 209", "departure_time": "15:15", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 207",
+                "departure_time": "09:15",
+                "flight_duration": "1h 30min",
+                "economy": 6587,
+                "business_class": 23282,
+                "first_class": 40590
+            },
+            {
+                "flight_number": "KM 208",
+                "departure_time": "12:15",
+                "flight_duration": "1h 30min",
+                "economy": 6587,
+                "business_class": 23282,
+                "first_class": 40590
+            },
+            {
+                "flight_number": "KM 209",
+                "departure_time": "15:15",
+                "flight_duration": "1h 30min",
+                "economy": 6587,
+                "business_class": 23282,
+                "first_class": 40590
+            }
         ],
         "Bengaluru": [
-            {"flight_number": "KM 210", "departure_time": "10:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 211", "departure_time": "13:00", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 212", "departure_time": "16:00", "flight_duration": "2h 30min"}
+            {
+                "flight_number": "KM 210",
+                "departure_time": "10:00",
+                "flight_duration": "2h 30min",
+                "economy": 7240,
+                "business_class": 24999,
+                "first_class": 42520
+            },
+            {
+                "flight_number": "KM 211",
+                "departure_time": "13:00",
+                "flight_duration": "2h 30min",
+                "economy": 7240,
+                "business_class": 24999,
+                "first_class": 42520
+            },
+            {
+                "flight_number": "KM 212",
+                "departure_time": "16:00",
+                "flight_duration": "2h 30min",
+                "economy": 7240,
+                "business_class": 24999,
+                "first_class": 42520
+            }
         ],
         "Chandigarh": [
-            {"flight_number": "KM 213", "departure_time": "10:45", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 214", "departure_time": "13:45", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 215", "departure_time": "16:45", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 213",
+                "departure_time": "10:45",
+                "flight_duration": "1h 15min",
+                "economy": 7196,
+                "business_class": 23252,
+                "first_class": 38750
+            },
+            {
+                "flight_number": "KM 214",
+                "departure_time": "13:45",
+                "flight_duration": "1h 15min",
+                "economy": 7196,
+                "business_class": 23252,
+                "first_class": 38750
+            },
+            {
+                "flight_number": "KM 215",
+                "departure_time": "16:45",
+                "flight_duration": "1h 15min",
+                "economy": 7196,
+                "business_class": 23252,
+                "first_class": 38750
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 216", "departure_time": "11:30", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 217", "departure_time": "14:30", "flight_duration": "2h 30min"},
-            {"flight_number": "KM 218", "departure_time": "17:30", "flight_duration": "2h 30min"}
+            {
+                "flight_number": "KM 216",
+                "departure_time": "11:30",
+                "flight_duration": "2h 30min",
+                "economy": 4772,
+                "business_class": 25653,
+                "first_class": 44535
+            },
+            {
+                "flight_number": "KM 217",
+                "departure_time": "14:30",
+                "flight_duration": "2h 30min",
+                "economy": 4772,
+                "business_class": 25653,
+                "first_class": 44535
+            },
+            {
+                "flight_number": "KM 218",
+                "departure_time": "17:30",
+                "flight_duration": "2h 30min",
+                "economy": 4772,
+                "business_class": 25653,
+                "first_class": 44535
+            }
         ],
         "Jaipur": [
-            {"flight_number": "KM 219", "departure_time": "12:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 220", "departure_time": "15:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 221", "departure_time": "18:15", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 219",
+                "departure_time": "12:15",
+                "flight_duration": "1h 30min",
+                "economy": 5517,
+                "business_class": 25974,
+                "first_class": 44764
+            },
+            {
+                "flight_number": "KM 220",
+                "departure_time": "15:15",
+                "flight_duration": "1h 30min",
+                "economy": 5517,
+                "business_class": 25974,
+                "first_class": 44764
+            },
+            {
+                "flight_number": "KM 221",
+                "departure_time": "18:15",
+                "flight_duration": "1h 30min",
+                "economy": 5517,
+                "business_class": 25974,
+                "first_class": 44764
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 222", "departure_time": "13:00", "flight_duration": "2h"},
-            {"flight_number": "KM 223", "departure_time": "16:00", "flight_duration": "2h"},
-            {"flight_number": "KM 224", "departure_time": "19:00", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 222",
+                "departure_time": "13:00",
+                "flight_duration": "2h",
+                "economy": 6193,
+                "business_class": 24736,
+                "first_class": 41707
+            },
+            {
+                "flight_number": "KM 223",
+                "departure_time": "16:00",
+                "flight_duration": "2h",
+                "economy": 6193,
+                "business_class": 24736,
+                "first_class": 41707
+            },
+            {
+                "flight_number": "KM 224",
+                "departure_time": "19:00",
+                "flight_duration": "2h",
+                "economy": 6193,
+                "business_class": 24736,
+                "first_class": 41707
+            }
         ],
         "Mumbai": [
-            {"flight_number": "KM 225", "departure_time": "13:45", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 226", "departure_time": "16:45", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 227", "departure_time": "20:45", "flight_duration": "2h 15min"}
+            {
+                "flight_number": "KM 225",
+                "departure_time": "13:45",
+                "flight_duration": "2h 15min",
+                "economy": 5619,
+                "business_class": 24831,
+                "first_class": 43791
+            },
+            {
+                "flight_number": "KM 226",
+                "departure_time": "16:45",
+                "flight_duration": "2h 15min",
+                "economy": 5619,
+                "business_class": 24831,
+                "first_class": 43791
+            },
+            {
+                "flight_number": "KM 227",
+                "departure_time": "20:45",
+                "flight_duration": "2h 15min",
+                "economy": 5619,
+                "business_class": 24831,
+                "first_class": 43791
+            }
         ],
         "Pune": [
-            {"flight_number": "KM 228", "departure_time": "14:30", "flight_duration": "2h"},
-            {"flight_number": "KM 229", "departure_time": "17:30", "flight_duration": "2h"},
-            {"flight_number": "KM 230", "departure_time": "21:30", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 228",
+                "departure_time": "14:30",
+                "flight_duration": "2h",
+                "economy": 6091,
+                "business_class": 23382,
+                "first_class": 38985
+            },
+            {
+                "flight_number": "KM 229",
+                "departure_time": "17:30",
+                "flight_duration": "2h",
+                "economy": 6091,
+                "business_class": 23382,
+                "first_class": 38985
+            },
+            {
+                "flight_number": "KM 230",
+                "departure_time": "21:30",
+                "flight_duration": "2h",
+                "economy": 6091,
+                "business_class": 23382,
+                "first_class": 38985
+            }
         ],
         "Srinagar": [
-            {"flight_number": "KM 231", "departure_time": "15:15", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 232", "departure_time": "18:15", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 233", "departure_time": "22:15", "flight_duration": "2h 15min"}
-        ]    
+            {
+                "flight_number": "KM 231",
+                "departure_time": "15:15",
+                "flight_duration": "2h 15min",
+                "economy": 7118,
+                "business_class": 24439,
+                "first_class": 41856
+            },
+            {
+                "flight_number": "KM 232",
+                "departure_time": "18:15",
+                "flight_duration": "2h 15min",
+                "economy": 7118,
+                "business_class": 24439,
+                "first_class": 41856
+            },
+            {
+                "flight_number": "KM 233",
+                "departure_time": "22:15",
+                "flight_duration": "2h 15min",
+                "economy": 7118,
+                "business_class": 24439,
+                "first_class": 41856
+            }
+        ]
     },
     "Pune": {
         "Ahmedabad": [
-            {"flight_number": "KM 234", "departure_time": "08:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 235", "departure_time": "11:30", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 236", "departure_time": "14:30", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 234",
+                "departure_time": "08:30",
+                "flight_duration": "1h 30min",
+                "economy": 6703,
+                "business_class": 23596,
+                "first_class": 41188
+            },
+            {
+                "flight_number": "KM 235",
+                "departure_time": "11:30",
+                "flight_duration": "1h 30min",
+                "economy": 6703,
+                "business_class": 23596,
+                "first_class": 41188
+            },
+            {
+                "flight_number": "KM 236",
+                "departure_time": "14:30",
+                "flight_duration": "1h 30min",
+                "economy": 6703,
+                "business_class": 23596,
+                "first_class": 41188
+            }
         ],
         "Bengaluru": [
-            {"flight_number": "KM 237", "departure_time": "09:15", "flight_duration": "1h"},
-            {"flight_number": "KM 238", "departure_time": "12:15", "flight_duration": "1h"},
-            {"flight_number": "KM 239", "departure_time": "15:15", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 237",
+                "departure_time": "09:15",
+                "flight_duration": "1h",
+                "economy": 6373,
+                "business_class": 24982,
+                "first_class": 42215
+            },
+            {
+                "flight_number": "KM 238",
+                "departure_time": "12:15",
+                "flight_duration": "1h",
+                "economy": 6373,
+                "business_class": 24982,
+                "first_class": 42215
+            },
+            {
+                "flight_number": "KM 239",
+                "departure_time": "15:15",
+                "flight_duration": "1h",
+                "economy": 6373,
+                "business_class": 24982,
+                "first_class": 42215
+            }
         ],
         "Hyderabad": [
-            {"flight_number": "KM 240", "departure_time": "10:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 241", "departure_time": "13:00", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 242", "departure_time": "16:00", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 240",
+                "departure_time": "10:00",
+                "flight_duration": "1h 30min",
+                "economy": 5076,
+                "business_class": 22154,
+                "first_class": 43276
+            },
+            {
+                "flight_number": "KM 241",
+                "departure_time": "13:00",
+                "flight_duration": "1h 30min",
+                "economy": 5076,
+                "business_class": 22154,
+                "first_class": 43276
+            },
+            {
+                "flight_number": "KM 242",
+                "departure_time": "16:00",
+                "flight_duration": "1h 30min",
+                "economy": 5076,
+                "business_class": 22154,
+                "first_class": 43276
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 243", "departure_time": "10:45", "flight_duration": "2h"},
-            {"flight_number": "KM 244", "departure_time": "13:45", "flight_duration": "2h"},
-            {"flight_number": "KM 245", "departure_time": "17:45", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 243",
+                "departure_time": "10:45",
+                "flight_duration": "2h",
+                "economy": 6893,
+                "business_class": 23738,
+                "first_class": 42397
+            },
+            {
+                "flight_number": "KM 244",
+                "departure_time": "13:45",
+                "flight_duration": "2h",
+                "economy": 6893,
+                "business_class": 23738,
+                "first_class": 42397
+            },
+            {
+                "flight_number": "KM 245",
+                "departure_time": "17:45",
+                "flight_duration": "2h",
+                "economy": 6893,
+                "business_class": 23738,
+                "first_class": 42397
+            }
         ],
         "Mumbai": [
-            {"flight_number": "KM 246", "departure_time": "11:30", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 247", "departure_time": "14:30", "flight_duration": "1h 15min"},
-            {"flight_number": "KM 248", "departure_time": "18:30", "flight_duration": "1h 15min"}
+            {
+                "flight_number": "KM 246",
+                "departure_time": "11:30",
+                "flight_duration": "1h 15min",
+                "economy": 5037,
+                "business_class": 22798,
+                "first_class": 41076
+            },
+            {
+                "flight_number": "KM 247",
+                "departure_time": "14:30",
+                "flight_duration": "1h 15min",
+                "economy": 5037,
+                "business_class": 22798,
+                "first_class": 41076
+            },
+            {
+                "flight_number": "KM 248",
+                "departure_time": "18:30",
+                "flight_duration": "1h 15min",
+                "economy": 5037,
+                "business_class": 22798,
+                "first_class": 41076
+            }
         ],
         "New Delhi": [
-            {"flight_number": "KM 249", "departure_time": "12:15", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 250", "departure_time": "15:15", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 251", "departure_time": "19:15", "flight_duration": "2h 15min"}
-        ]    
+            {
+                "flight_number": "KM 249",
+                "departure_time": "12:15",
+                "flight_duration": "2h 15min",
+                "economy": 6975,
+                "business_class": 25989,
+                "first_class": 38917
+            },
+            {
+                "flight_number": "KM 250",
+                "departure_time": "15:15",
+                "flight_duration": "2h 15min",
+                "economy": 6975,
+                "business_class": 25989,
+                "first_class": 38917
+            },
+            {
+                "flight_number": "KM 251",
+                "departure_time": "19:15",
+                "flight_duration": "2h 15min",
+                "economy": 6975,
+                "business_class": 25989,
+                "first_class": 38917
+            }
+        ]
     },
     "Srinagar": {
         "Amritsar": [
-            {"flight_number": "KM 252", "departure_time": "08:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 253", "departure_time": "11:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 254", "departure_time": "14:45", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 252",
+                "departure_time": "08:45",
+                "flight_duration": "1h 30min",
+                "economy": 5861,
+                "business_class": 22202,
+                "first_class": 42489
+            },
+            {
+                "flight_number": "KM 253",
+                "departure_time": "11:15",
+                "flight_duration": "1h 30min",
+                "economy": 5861,
+                "business_class": 22202,
+                "first_class": 42489
+            },
+            {
+                "flight_number": "KM 254",
+                "departure_time": "14:45",
+                "flight_duration": "1h 30min",
+                "economy": 5861,
+                "business_class": 22202,
+                "first_class": 42489
+            }
         ],
         "Chandigarh": [
-            {"flight_number": "KM 255", "departure_time": "09:30", "flight_duration": "1h"},
-            {"flight_number": "KM 256", "departure_time": "12:00", "flight_duration": "1h"},
-            {"flight_number": "KM 257", "departure_time": "15:30", "flight_duration": "1h"}
+            {
+                "flight_number": "KM 255",
+                "departure_time": "09:30",
+                "flight_duration": "1h",
+                "economy": 6674,
+                "business_class": 24219,
+                "first_class": 41082
+            },
+            {
+                "flight_number": "KM 256",
+                "departure_time": "12:00",
+                "flight_duration": "1h",
+                "economy": 6674,
+                "business_class": 24219,
+                "first_class": 41082
+            },
+            {
+                "flight_number": "KM 257",
+                "departure_time": "15:30",
+                "flight_duration": "1h",
+                "economy": 6674,
+                "business_class": 24219,
+                "first_class": 41082
+            }
         ],
         "Jaipur": [
-            {"flight_number": "KM 258", "departure_time": "10:15", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 259", "departure_time": "12:45", "flight_duration": "1h 30min"},
-            {"flight_number": "KM 260", "departure_time": "16:15", "flight_duration": "1h 30min"}
+            {
+                "flight_number": "KM 258",
+                "departure_time": "10:15",
+                "flight_duration": "1h 30min",
+                "economy": 6353,
+                "business_class": 24802,
+                "first_class": 38436
+            },
+            {
+                "flight_number": "KM 259",
+                "departure_time": "12:45",
+                "flight_duration": "1h 30min",
+                "economy": 6353,
+                "business_class": 24802,
+                "first_class": 38436
+            },
+            {
+                "flight_number": "KM 260",
+                "departure_time": "16:15",
+                "flight_duration": "1h 30min",
+                "economy": 6353,
+                "business_class": 24802,
+                "first_class": 38436
+            }
         ],
         "Kolkata": [
-            {"flight_number": "KM 261", "departure_time": "11:45", "flight_duration": "2h"},
-            {"flight_number": "KM 262", "departure_time": "14:15", "flight_duration": "2h"},
-            {"flight_number": "KM 263", "departure_time": "17:45", "flight_duration": "2h"}
+            {
+                "flight_number": "KM 261",
+                "departure_time": "11:45",
+                "flight_duration": "2h",
+                "economy": 7029,
+                "business_class": 23117,
+                "first_class": 41389
+            },
+            {
+                "flight_number": "KM 262",
+                "departure_time": "14:15",
+                "flight_duration": "2h",
+                "economy": 7029,
+                "business_class": 23117,
+                "first_class": 41389
+            },
+            {
+                "flight_number": "KM 263",
+                "departure_time": "17:45",
+                "flight_duration": "2h",
+                "economy": 7029,
+                "business_class": 23117,
+                "first_class": 41389
+            }
         ],
         "Mumbai": [
-            {"flight_number": "KM 264", "departure_time": "13:00", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 265", "departure_time": "15:30", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 266", "departure_time": "19:00", "flight_duration": "2h 15min"}
+            {
+                "flight_number": "KM 264",
+                "departure_time": "13:00",
+                "flight_duration": "2h 15min",
+                "economy": 6822,
+                "business_class": 22018,
+                "first_class": 38464
+            },
+            {
+                "flight_number": "KM 265",
+                "departure_time": "15:30",
+                "flight_duration": "2h 15min",
+                "economy": 6822,
+                "business_class": 22018,
+                "first_class": 38464
+            },
+            {
+                "flight_number": "KM 266",
+                "departure_time": "19:00",
+                "flight_duration": "2h 15min",
+                "economy": 6822,
+                "business_class": 22018,
+                "first_class": 38464
+            }
         ],
         "New Delhi": [
-            {"flight_number": "KM 267", "departure_time": "14:15", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 268", "departure_time": "16:45", "flight_duration": "2h 15min"},
-            {"flight_number": "KM 269", "departure_time": "20:15", "flight_duration": "2h 15min"}
+            {
+                "flight_number": "KM 267",
+                "departure_time": "14:15",
+                "flight_duration": "2h 15min",
+                "economy": 7152,
+                "business_class": 22552,
+                "first_class": 38521
+            },
+            {
+                "flight_number": "KM 268",
+                "departure_time": "16:45",
+                "flight_duration": "2h 15min",
+                "economy": 7152,
+                "business_class": 22552,
+                "first_class": 38521
+            },
+            {
+                "flight_number": "KM 269",
+                "departure_time": "20:15",
+                "flight_duration": "2h 15min",
+                "economy": 7152,
+                "business_class": 22552,
+                "first_class": 38521
+            }
         ]
     },
     "Thiruvananthapuram": {
         "Bengaluru": [
-            {"flight_number": "KM 270", "departure_time": "08:45", "flight_duration": "1h 45min"},
-            {"flight_number": "KM 271", "departure_time": "10:30", "flight_duration": "1h 45min"},
-            {"flight_number": "KM 272", "departure_time": "12:15", "flight_duration": "1h 45min"}
+            {
+                "flight_number": "KM 270",
+                "departure_time": "08:45",
+                "flight_duration": "1h 45min",
+                "economy": 7343,
+                "business_class": 24647,
+                "first_class": 42608
+            },
+            {
+                "flight_number": "KM 271",
+                "departure_time": "10:30",
+                "flight_duration": "1h 45min",
+                "economy": 7343,
+                "business_class": 24647,
+                "first_class": 42608
+            },
+            {
+                "flight_number": "KM 272",
+                "departure_time": "12:15",
+                "flight_duration": "1h 45min",
+                "economy": 7343,
+                "business_class": 24647,
+                "first_class": 42608
+            }
         ],
         "Kozhikode": [
-            {"flight_number": "KM 273", "departure_time": "09:30", "flight_duration": "45min"},
-            {"flight_number": "KM 274", "departure_time": "11:15", "flight_duration": "45min"},
-            {"flight_number": "KM 275", "departure_time": "13:00", "flight_duration": "45min"}
-        ]    
+            {
+                "flight_number": "KM 273",
+                "departure_time": "09:30",
+                "flight_duration": "45min",
+                "economy": 5347,
+                "business_class": 22545,
+                "first_class": 38078
+            },
+            {
+                "flight_number": "KM 274",
+                "departure_time": "11:15",
+                "flight_duration": "45min",
+                "economy": 5347,
+                "business_class": 22545,
+                "first_class": 38078
+            },
+            {
+                "flight_number": "KM 275",
+                "departure_time": "13:00",
+                "flight_duration": "45min",
+                "economy": 5347,
+                "business_class": 22545,
+                "first_class": 38078
+            }
+        ]
     },
     "Vijayawada": {
         "Hyderabad": [
-            {"flight_number": "KM 276", "departure_time": "08:45", "flight_duration": "45min"},
-            {"flight_number": "KM 277", "departure_time": "10:00", "flight_duration": "45min"},
-            {"flight_number": "KM 278", "departure_time": "11:15", "flight_duration": "45min"}
-        ]    
+            {
+                "flight_number": "KM 276",
+                "departure_time": "08:45",
+                "flight_duration": "45min",
+                "economy": 6969,
+                "business_class": 23012,
+                "first_class": 39050
+            },
+            {
+                "flight_number": "KM 277",
+                "departure_time": "10:00",
+                "flight_duration": "45min",
+                "economy": 6969,
+                "business_class": 23012,
+                "first_class": 39050
+            },
+            {
+                "flight_number": "KM 278",
+                "departure_time": "11:15",
+                "flight_duration": "45min",
+                "economy": 6969,
+                "business_class": 23012,
+                "first_class": 39050
+            }
+        ]
     }
 }
