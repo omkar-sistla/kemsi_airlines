@@ -1,11 +1,10 @@
-import React, { useState } from "react";
-import {useNavigate} from "react-router-dom";
+import React, { useContext, useState } from "react";
 import NavBar from "../components/nav_bar/nav_bar";
-import { auth } from "../config/firebase";
-import {createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification, signOut} from "firebase/auth";
-import "./login.css"
+import axios from "axios";
+import { AuthContext } from "../context/authContext";
+import "./login.css";
+
 function NameInput(props){
-    window.scrollTo(0,0);
     return(
         <div id="name_input">
             <label>NAME</label>
@@ -24,12 +23,17 @@ function InputContainer(props){
         </div>
     )
 }
-export default function Login(){
-    const[signup, setsignup] = useState(false);
+export default function LoginExpress(){
+    const[signup, setsignup] = useState(false); //to switch between signup form and signin form
+    const [errorMsg, setErrorMsg]=useState(""); //to set the error message in the form
+    const [submitDisable, setSubmitDisable] = useState(false); //to disable the submit button while running operation on server
+
     const[signInValues, setSignInValues] = useState({
         email:"",
         pass:"",
     })
+
+
     const [signUpValues, setSignUpValues] = useState({
         firstName: "",
         lastName:"",
@@ -37,73 +41,74 @@ export default function Login(){
         pass:"",
         confPass:""
     })
-    const [errorMsg, setErrorMsg]=useState("");
-    const [submitDisable, setSubmitDisable] = useState(false);
-    const navigate = useNavigate();
-    const handleSignInSubmission=()=>{
+
+    const {login}=useContext(AuthContext); //login function imported from authcontext
+
+    //function for signing in
+    const handleSignInSubmission=async(e)=>{
+        e.preventDefault();
         if (!signInValues.email || !signInValues.pass){
             setErrorMsg("Fill all the fields");
             return;
         }
         setErrorMsg("");
         setSubmitDisable(true);
-        signInWithEmailAndPassword(auth, signInValues.email, signInValues.pass)
-        .then(async (res) =>{
-            setSubmitDisable(false);
-            navigate("/");
-        })
-        .catch((err) => {
-            setSubmitDisable(false);
-            setErrorMsg(err.message);
-        });
-    }
-    const handleSignUpSubmission=()=>{
+        try{
+            await login(signInValues);            
+        } catch(err){
+            setErrorMsg(err.response.data);
+            console.log(errorMsg);
+        }
+        setSubmitDisable(false);  
+        window.location.href="/";
+    };
+
+    //function for regestering
+    const handleSignUpSubmission= async(e)=>{
+        e.preventDefault();
+
+        //telling user to fill all the fields
         if (!signUpValues.firstName || !signUpValues.lastName || !signUpValues.email || !signUpValues.pass){
             setErrorMsg("Fill all the fields");
             return;
         }
+
+        //strong password error
         if (signUpValues.pass.length < 8 || !/[A-Z]/.test(signUpValues.pass) || !/[a-z]/.test(signUpValues.pass) || !/[0-9]/.test(signUpValues.pass) || !/[!@#$%^&*]/.test(signUpValues.pass)) {
             setErrorMsg("Password should have a minimum of 8 characters, including at least 1 uppercase letter, 1 lowercase letter, 1 numerical digit, and 1 special character");
             return;
         }
+
+        //password mismatch
         if (signUpValues.pass !== signUpValues.confPass){
             setErrorMsg("Passwords not matched");
             return;
         }
-        setErrorMsg("");
-        setSubmitDisable(true);
-        createUserWithEmailAndPassword(auth, signUpValues.email, signUpValues.pass)
-        .then(async (res) =>{
-            const user = res.user;
-            await updateProfile(user, {
-                displayName: signUpValues.firstName,
-            });
-            await sendEmailVerification(user);
-            signOut(auth)
-            .then(()=>{
-            navigate("/login");
-            })
-            .catch((err) => {
-                console.log(err);
-            })
-            setSubmitDisable(false);
-            setErrorMsg("Account created. Please check your email and verify your account, then log in.");
-            // navigate("/");
-        })
-        .catch((err) => {
-            setSubmitDisable(false);
-            setErrorMsg(err.message);
-        });
+
+        setErrorMsg("");//reset the error message
+        setSubmitDisable(true); //disable the submit button
+
+        //request to server
+        try{
+            await axios.post("http://localhost:3000/register",signUpValues,{withCredentials: true} );
+        } catch(err){
+            setErrorMsg(err.response.data);
+            console.log(err);
+        }
+         
+        setSubmitDisable(false);
     }
     const ToggleSignup = () => {
         setsignup(!signup);
         setErrorMsg("");
     }
+
+    //finally it is the login page
     return(
         <div id="login_page"> 
             <NavBar/>      
             <form className={signup ? "login_form inactive" : 'login_form'}>
-                <h2>SIGN IN</h2>
+                <h2>SIGN IN EXPRESS</h2>
                 <InputContainer label="EMAIL/USERNAME" type="text" placeholder="EMAIL/USERNAME" 
                 onChange={(e)=> setSignInValues((prev)=>({...prev, email:e.target.value}))}/>
 
@@ -119,7 +124,7 @@ export default function Login(){
                 </div>                
             </form>
             <form className={signup ? "signup_form active" : 'signup_form'}>
-                <h2>SIGN UP</h2>
+                <h2>SIGN UP EXPRESS</h2>
                 <NameInput 
                     fchange={(event) => 
                         setSignUpValues((prev) => 

@@ -29,6 +29,9 @@ function Booking(){
         departDay:"",
         returnDay:""
     });
+    useEffect(() => {
+        localStorage.setItem("bookingValues", JSON.stringify(bookingValues));
+    }, [bookingValues]);
     const today = new Date();
     const maxdate = new Date();
     maxdate.setMonth(maxdate.getMonth() + 3);

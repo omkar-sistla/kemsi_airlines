@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@600;700&display=swap');
+.payment_page{
+    display: flex;
+    flex-direction: column;
+}
+.payment_page .your_flight{
+    align-self: center;
+    font-weight: 600;
+}
+.payment_page .passenger{
+    width:calc(90vw - 40px);
+    background-color: white;
+    padding: 5px 20px;
+    margin:auto;
+    margin-top: 20px;
+}
+.payment_page .passenger h2{
+    margin-bottom: 0;
+}
+.payment_page .passenger .name_gender{
+    margin-top: 5px;
+    color: #777777;
+    font-weight: lighter;
+}
+.payment_page .passenger .contact_section{
+    display: flex;
+    gap: 100px;
+}
+.payment_page .passenger .contact_section .contact_details .field{
+    margin-bottom: 0px;
+    color: #777777;
+}
+.payment_page .passenger .contact_section .contact_details .value{
+    margin-top: 5px;
+}
+.payment_page .price_distribution{
+    padding: 20px;
+    background-color: #EFF6FF;
+    width: calc(90vw - 40px);
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.payment_page .price_distribution .price_details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.payment_page .price_distribution .price_details p{
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+.payment_page .price_distribution .price_details .price{
+    color: navy;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 0px;
+}
+.payment_page .price_distribution .price_details .links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: right;
+    gap: 10px;
+}
+.payment_page .price_distribution .price_details a{
+    text-decoration: none;
+    color: #C02D32;
+    font-size: 12px;
+    font-stretch: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.payment_page .payment_button{
+    background-color: orange;
+    border: 0px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    align-self: flex-end;
+    margin-top: 20px;
+    margin-right: calc(5vw - 8px);
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'montserrat';
+    font-weight: 700;
+    cursor: pointer;
+}
+@media(max-width:700px){
+    .payment_page .passenger .contact_section{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .payment_page .flight_card{
+        width: calc(90vw - 20px);
+    }
+    .payment_page .price_distribution h2{
+        align-self: flex-end;
+        font-size: medium;
+    }
+    .payment_page .price_distribution .price_details p{
+        font-kerning: auto;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    .payment_page .price_distribution{
+        flex-direction: column;
+    }
+    .payment_page .price_distribution .price_details .price{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}

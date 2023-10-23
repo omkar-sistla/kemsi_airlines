@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthContextProvider } from './context/authContext';
+import { BookingProvider } from './context/bookingContext';
+import { JourneyProvider } from './context/ticketsContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-    <App />
+    <JourneyProvider>
+    <BookingProvider>
+    <AuthContextProvider>
+        <App />
+    </AuthContextProvider>
+    </BookingProvider>
+    </JourneyProvider>
 
 );
 

@@ -4,9 +4,7 @@ import Booking from '../components/booking/booking';
 import Section from '../components/sections/sections';
 import plansjson from '../components/card/plansjson.json'
 
-
 function Home() {
-  window.scrollTo(0,0);
   return (
     <div className="Home">      
       <NavBar/>

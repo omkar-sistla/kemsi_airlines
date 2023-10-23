@@ -1,29 +1,15 @@
 import React from "react";
+import { AuthContext } from "../../context/authContext";
 import './nav_bar.css';
-import { Link, useNavigate } from "react-router-dom";
-import { useEffect, useState } from 'react';
-import {auth} from "../../config/firebase";
-import { signOut } from "firebase/auth";
+import { Link } from "react-router-dom";
+import {useState, useContext } from 'react';
 function NavBar(){
-    const [isLoggedIn, setIsLoggedIn] = useState("");
-    const navigate = useNavigate();
-    useEffect(()=>{
-        auth.onAuthStateChanged((user) => {
-        if (user) {
-            setIsLoggedIn(user.displayName.toLowerCase().charAt(0).toUpperCase() + user.displayName.slice(1));
-        } else setIsLoggedIn("");      
-        });
-    },[]);
+    const {logout, user, currentToken}=useContext(AuthContext);
     const handleSignOut=()=>{
-        signOut(auth)
-        .then(()=>{
-            navigate("/login");
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    }
-
+        logout();
+        window.location.href="/login";
+        alert("Logged Out Successfully")
+    };
     const [scrolled, setScrolled] = useState(false);
     const [menuActive, setMenuActive] = useState(false);
     const [profileActive, setProfileActive] = useState(false);
@@ -60,12 +46,12 @@ function NavBar(){
         <div className={menuActive ?"menu active" : 'menu'}>
         <ul className="upper">
             <li><Link id="Contact" to="/contact-us"><i className="fa-solid fa-phone"></i> Contact Us</Link></li>
-            <li> {isLoggedIn==="" ? <Link id="Login" to="/login"><i className="fa-solid fa-right-to-bracket"></i> Login</Link>
+            <li> { !currentToken ? <Link id="Login" to="/login"><i className="fa-solid fa-right-to-bracket"></i> Login</Link>
             :<div className="display_name">
-                <b onClick={ToggleProfile}><i className="fa-solid fa-user"></i> {isLoggedIn}</b>
+                <b onClick={ToggleProfile}><i className="fa-solid fa-user"></i>{" "+user.FirstName}</b>
                 <div className={profileActive ?"user_options active" :"user_options"}>
                     <b onClick={handleSignOut}>Logout</b>
-                    <b>My Journeys</b>
+                    <Link to="/my-journeys">My Journeys</Link>
                 </div>
             </div>}
             </li>    

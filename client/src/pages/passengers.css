@@ -1,0 +1,196 @@
+.passengers_page, .payment_page{
+    font-family: 'montserrat';
+    background-color: #EEEDED;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+.booking_header{
+    background-color: white;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    box-shadow: 0 0 5px rgb(171, 171, 171);
+    width: 100%;
+}
+.booking_header.scrolled .logo{
+    display: none;
+}
+.booking_header.scrolled{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+.passengers_page .logo img,
+.payment_page .logo img{
+    margin-left: 5vw;
+}
+.process_indicator{
+    margin-top: 10px;
+}
+.process_indicator .process.done{
+    border-bottom: 2px solid rgb(255, 206, 116);
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+}
+.process_indicator .process.done .process_number{
+    background-color: rgb(255, 206, 116);
+}
+.from_and_to{
+    margin-top: 20px;
+    margin-left: 5vw;
+    display: flex;
+}
+.from_and_to .booking_header_from_to .date{
+    font-size: 12px;
+    margin-bottom: 0px;
+    color: rgb(50, 50, 50);
+    font-weight: bold;
+}
+.from_and_to .booking_header_from_to .place{
+    margin-top: 0px;
+    font-size: 22px;
+}
+.from_and_to .booking_header_from_to.from .place{
+    text-align: right;
+}
+.from_and_to .middle_part{
+    display: flex;
+    gap:3px;
+    align-self: center;
+}
+.from_and_to .middle_part p{
+    font-size: 12px;
+    background-color: #F3F6F9;
+    padding: 4px;
+}
+.from_and_to .line{
+    border-bottom: 1px dashed black;
+    min-width: 40px;
+    align-self: center;
+}
+.from_and_to_mobile{
+    display: none;
+}
+.passengers_page .your_flight,
+.payment_page .your_flight,
+.passengers_page .passenger_details{
+    text-align: center;
+    margin: 30px;
+    font-weight: bold;
+}
+.passengers_page .your_flight.scrolled{
+    margin-top: 278px;
+}
+.passengers_page .passenger_details{
+    margin-top: 50px;
+}
+.passengers_page .flight_card,
+.payment_page .flight_card{
+    width: calc(90vw - 40px);
+    box-shadow: none;
+}
+.passengers_page .flight_card .fare, 
+.passengers_page .flight_card button,
+.payment_page .flight_card .fare, 
+.payment_page .flight_card button {
+    display: none;
+}
+.passengers_page .passenger_form .row{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.passengers_page .passenger_form button{
+    align-self: flex-end;
+}
+
+.passengers_page .passenger_form{
+    width: calc(90vw - 100px);
+    margin-top: 50px;
+}
+
+.passenger_form .input_container, .passenger_form button{
+    width: calc(50% - 5px);
+    align-self: center;
+}
+.passenger_form button{
+    background-color: orange;
+}
+.passenger_form .input_container label{
+    font-family: 'montserrat';
+    font-size: 14px;
+}
+.proceed_form{
+    margin-top: 20px;
+    width: calc(90vw - 100px);
+    box-shadow: 0px 0px 10px rgb(188, 188, 188);
+}
+.proceed_form h2{
+    text-align: center;
+    width: 100%;
+}
+.proceed_form i{
+    color: white;
+    background-color: green;
+    padding: 5px 6px;
+    border-radius: 50%;
+}
+@media(max-width:700px){
+    .from_and_to{
+        display: none;
+    }
+    .from_and_to_mobile{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        margin: auto;        
+        margin-top: 20px;
+        text-align: center;
+        background-color: #0E4688;
+        padding: 16px 0;
+        color: white;
+    }
+    .from_and_to_mobile .place{
+        font-size: 14px;
+        margin: 5px;
+    }
+    .from_and_to_mobile .date{
+        font-size: 12px;
+        margin: 5px;
+    }
+    .passengers_page .logo img#Logo,
+    .payment_page .logo img#Logo{
+        margin-left: 5vw;
+    }
+    .process_indicator .process_name{
+        display: none;
+    }
+    .passengers_page .flight_card{
+        width: calc(90vw - 20px);
+    }
+    .passengers_page .passenger_form{
+        width: calc(90vw - 40px);
+        gap: 10px;
+    }
+    .passengers_page .passenger_form .row{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .passengers_page .passenger_form .row button{
+        align-self: center;
+    }
+    .passenger_form .input_container, .passenger_form button{
+        width: 100%;
+    }
+    .proceed_form{
+        width: calc(90vw - 40px)
+    }
+}
+@media(min-width:700px) and (max-width:760px){
+    .passengers_page .passenger_form{
+        width: calc(90vw - 40px);
+    }
+    .proceed_form{
+        width: calc(90vw - 40px)
+    }
+}

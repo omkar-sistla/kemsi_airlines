@@ -1,0 +1,21 @@
+.pleaselogin{
+    font-family: 'montserrat';
+}
+.pleaselogin{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 50vh;
+    justify-content: center;
+}
+.pleaselogin p{
+    font-size: larger;
+}
+.pleaselogin a{
+    text-decoration: none;
+    background-color: orange;
+    width: fit-content;
+    padding: 10px;
+    color: white;
+}

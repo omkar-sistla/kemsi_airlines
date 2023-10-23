@@ -25,7 +25,6 @@ function creatContact(contact,index){
     )
 }
 export default function Contact(){
-    window.scrollTo(0,0);
     return(
         <div id="contact_us_page">
             <NavBar/>

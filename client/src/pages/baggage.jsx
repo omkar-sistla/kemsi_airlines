@@ -2,7 +2,6 @@ import React from "react";
 import "./guidelines.css"
 import NavBar from "../components/nav_bar/nav_bar";
 export default function Baggage() {
-    window.scrollTo(0,0);
     return(
         <div className="guidelinepage">
             <NavBar/>

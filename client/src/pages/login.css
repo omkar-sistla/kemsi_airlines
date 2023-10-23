@@ -30,14 +30,14 @@ form .input_container{
 form .input_container label, #name_input label {
     font-size: 11px;
 }
-form input[type="text"], form input[type="password"], 
+form input[type="text"], form input[type="password"], form input[type="number"], form select, 
 form button, form textarea, form input[list]{
     height: 45px;
     padding: 0;
     border: 1px solid rgb(176, 174, 174);
     font-family: 'Montserrat', sans-serif;
 }
-form input[type="text"], form input[type="password"], form input[list]{
+form input[type="text"], form input[type="password"], form input[list],form input[type="number"], form select{
     max-width: 100%;    
     padding: 0 15px;
 }

@@ -26,7 +26,6 @@ function CreateDropDown(dropdown){
     )
 }
 export default function Feedback(){
-    window.scrollTo(0,0);
     return(
         <div id="feedback_page">
             <NavBar/>

@@ -1,19 +1,81 @@
 footer{
-    margin-top: 100px ;
+    margin-top: 15px ;
     text-align: center;
-    font-family: sans-serif;
+    font-family: 'montserrat';
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 100vw;
+    padding: 20px;
+    color: #BFBFBF;
+    background-color: #10182F;
 }
-footer .follow_us p{
-    font-size: 20px;
+footer .footer_content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+footer .footer_col{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+footer .col_pack{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .footer_content .footer_labels{
+    color: white;
+    align-self: flex-start;
+    font-family: 'montserrat';
+    font-weight: normal;
+    padding: 0 20px 5px 0px;
+    border-bottom: 1px solid white;
+}
+footer .footer_content a{
+    font-size: 3px;
+    text-decoration: none;
+    text-align: left;
+    color: #BFBFBF;
+}
+
+footer .footer_contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .footer_contact .contact_info p{
+    margin: 0px;
+}
+footer .footer_content p,
+footer .footer_content a{
+    font-size: 13px;
+}
+footer img{
+    width: 100px;
+    height: 50px;
+}
+
 footer .social_media{
     display: flex;
     justify-content: center;
     gap: 20px;
-    color: black;
-    font-size: 40px;
+
 }
-footer .social_media a{
+footer .footer_content .social_media a{
     text-decoration: none;
-    color: black;
+    color: #BFBFBF;
+    font-size: 25px;
+}
+@media(max-width:700px){
+    footer .footer_content{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: auto;
+    }
+
 }

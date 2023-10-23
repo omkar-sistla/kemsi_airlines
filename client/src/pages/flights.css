@@ -10,17 +10,56 @@
 }
 .flights_page{
     font-family: 'montserrat';
-    background-color: rgb(255, 253, 251);
+    background-color: #EEEDED;
+    padding-bottom: 100px;
 }
-.flights_page .logo{
+.flights_page .logo, .passengers_page .logo, .payment_page .logo{
     background-color: #E57C23;
 }
 .flights_page .logo img{
-    margin-left: 5vw;
+    margin-left: 10vw;
+}
+.process_indicator{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+.process_indicator .process{
+    width: 30vw;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border-bottom: 2px solid rgb(201, 201, 201);
+    padding-bottom: 5px;
+    align-items: center;
+    color: rgb(201, 201, 201);
+}
+.process_indicator .process.active{
+    border-bottom: 2px solid orange;
+    font-weight: bold;
+    color: black;
+}
+.process_indicator .process.active .process_number{
+    background-color: orange;
+}
+.process_indicator .process_number{
+    background-color: #C7CACC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
 }
 .flights_page_content{
     width: 90vw;
     margin: auto;
+}
+.flights_page_content.scrolled{
+    margin-top: 278px;
 }
 .flights_page .flights_page_content h2{
     font-size: 30px;
@@ -33,17 +72,47 @@
     color: black;
     margin: 10px auto 40px auto;
 }
+.flights_page .flights_page_content .filter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.flights_page .flights_page_content .filter select{
+    width: 100px;
+    height: 30px;
+    align-self: center;
+    border-radius: 20px;
+    font-family: 'montserrat';
+    text-align: center;
+    font-weight: 900;
+    border: 1px solid rgb(137, 137, 137);
+}
 .flights_page .flights_page_content h4{
     font-weight: normal;
 }
 .flight_card{
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     margin-top: 10px;
     padding: 20px;
     box-shadow: 0 0 5px rgb(144, 144, 144);
     user-select: none;
     background-color: white;
+    gap:10px;
+}
+.flight_card button{
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    height: 45px;
+    width: 100%;
+    align-self: flex-end;
+    cursor: pointer;
 }
 .flight{
     display: flex;
@@ -95,12 +164,16 @@
 
 .flight .fromside, .flight .toside{
     display: flex;
-
     flex-direction: column;
+    align-items: center;
 }
 .flight .fromside p, .flight .toside p, .flight .middlepart p{
     margin: 0px 10px;
 }
+/* .flight .toside .time,
+.flight .toside .airport{
+    align-self: flex-end;
+} */
 .flight .time{
     font-size: xx-large;
 }
@@ -196,14 +269,22 @@
 .flight_card .flightroute .flightinfo .layoff_det .layoff_time{
     font-weight: bold;
 }
-
+.flights_page .flights_page_content .passenger_form h2{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
 @media(max-width:700px){
+    .flights_page_content.scrolled{
+        margin-top: 240px;
+    }
     .flight_card{
         max-width: 90vw;
         margin: auto;
         margin-top: 10px;
         padding: 10px;
         box-shadow: 0 0 5px rgb(144, 144, 144);
+        gap: 0px;
     }
     .flight .flight_numbers{
         display: none;
