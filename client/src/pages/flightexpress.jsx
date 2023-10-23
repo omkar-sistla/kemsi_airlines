@@ -307,7 +307,7 @@ export default function Flights(){
     useEffect(() => {
         const getFlights = async () => {
             try {
-                const response = await axios.get(`http://localhost:3000/flights`, {
+                const response = await axios.get(`https://kemsi-airlines-backend.vercel.app/flights`, {
                     params: {
                         start_city: currentbook.from.slice(0, -5),
                         end_city: currentbook.to.slice(0, -5)

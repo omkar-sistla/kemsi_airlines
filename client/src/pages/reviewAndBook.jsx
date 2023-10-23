@@ -139,7 +139,7 @@ export default function Payment(){
     const handlePayment = async(e)=>{
         e.preventDefault();
         try{
-            await axios.post("http://localhost:3000/book",bookTheJourney,{withCredentials: true} );
+            await axios.post("https://kemsi-airlines-backend.vercel.app/book",bookTheJourney,{withCredentials: true} );
             navigate("/", { replace: true });
             alert("Booking Successful");
         } catch(err){

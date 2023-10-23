@@ -60,7 +60,7 @@ export default function LoginExpress(){
             console.log(errorMsg);
         }
         setSubmitDisable(false);  
-        window.location.href="/";
+        // window.location.href="/";
     };
 
     //function for regestering
@@ -90,7 +90,7 @@ export default function LoginExpress(){
 
         //request to server
         try{
-            await axios.post("http://localhost:3000/register",signUpValues,{withCredentials: true} );
+            await axios.post("https://kemsi-airlines-backend.vercel.app/register",signUpValues,{withCredentials: true} );
         } catch(err){
             setErrorMsg(err.response.data);
             console.log(err);

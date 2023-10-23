@@ -100,7 +100,7 @@ export default function JourneyDetails(){
     const getBookingDetails = async () => {
         try {
           const response = await axios.post(
-            `http://localhost:3000/bookings/ticket`,
+            `https://kemsi-airlines-backend.vercel.app/bookings/ticket`,
             { Booking_Id: bookingId },
             { withCredentials: true } // This should be the third argument
           );
@@ -120,7 +120,7 @@ export default function JourneyDetails(){
     try {
       const userConfirmed = window.confirm("Are you sure you want to cancel the journey?");
       if (userConfirmed) {
-        const response = await axios.patch(`http://localhost:3000/bookings/cancel-journey`, {
+        const response = await axios.patch(`https://kemsi-airlines-backend.vercel.app/bookings/cancel-journey`, {
           Booking_Id: bookingId
         });
         console.log(response.data);

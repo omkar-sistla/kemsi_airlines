@@ -58,7 +58,7 @@ export default function MyJourneysPage(){
     useEffect(() => {
         const getUpcomingJourneys = async () => {
             try {
-                const response = await axios.post(`http://localhost:3000/bookings/upcoming-journeys`, {
+                const response = await axios.post(`https://kemsi-airlines-backend.vercel.app/bookings/upcoming-journeys`, {
                     email: user.Email
                 }, {
                     withCredentials: true
@@ -77,7 +77,7 @@ export default function MyJourneysPage(){
     useEffect(() => {
         const getCompletedJourneys = async () => {
             try {
-                const response = await axios.post(`http://localhost:3000/bookings/completed-journeys`, {
+                const response = await axios.post(`https://kemsi-airlines-backend.vercel.app/bookings/completed-journeys`, {
                     email: user.Email
                 }, {
                     withCredentials: true
@@ -95,7 +95,7 @@ export default function MyJourneysPage(){
     useEffect(() => {
         const getCancelledJourneys = async () => {
             try {
-                const response = await axios.post(`http://localhost:3000/bookings/cancelled-journeys`, {
+                const response = await axios.post(`https://kemsi-airlines-backend.vercel.app/bookings/cancelled-journeys`, {
                     email: user.Email
                 }, {
                     withCredentials: true
