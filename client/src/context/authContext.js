@@ -7,7 +7,7 @@ export const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState({});
     const [currentToken, setCurrentToken]=useState();
     const authorize = async() =>{
-        const res = await axios.get("https://kemsi-airlines.vercel.app/",{
+        const res = await axios.get("https://kemsi-airlines-backend.vercel.app/",{
             withCredentials:true
         });
         console.log(res.data);
@@ -21,12 +21,12 @@ export const AuthContextProvider = ({ children }) => {
 
 
     const login = async (signInValues) => {
-        await axios.post("https://kemsi-airlines.vercel.app/login", signInValues, { 
+        await axios.post("https://kemsi-airlines-backend.vercel.app/login", signInValues, { 
             withCredentials: true 
         });
     };
     const logout = async() => {
-        await axios.get("https://kemsi-airlines.vercel.app/logout",{
+        await axios.get("https://kemsi-airlines-backend.vercel.app/logout",{
             withCredentials: true
         });
     }

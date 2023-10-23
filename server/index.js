@@ -10,7 +10,7 @@ import  {registerRoute,loginRoute,logoutRoute,authorizeRoute} from "./routes/aut
 import { upcomingBookingsRoute,completedBookingsRoute, cancelledBookingsRoute,bookingDetailsRoute, cancelBookingRoute } from "./routes/bookings.js";
 import { bookJourneyRoute } from "./routes/book_a_journey.js";
 app.use(cors({
-    origin:"http://localhost:3001",
+    origin:"https://kemsi-airlines.vercel.app",
     credentials:true
 }));
 app.use(cookieParser());
