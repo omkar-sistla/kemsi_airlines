@@ -13,6 +13,7 @@ app.use(cors({
     origin:"http://localhost:3001",
     credentials:true
 }));
+app.get("/",(req,res)=>{res.send("rara mawa")})
 app.use(cookieParser());
 app.use(express.json());
 app.use("/flights",flights);
