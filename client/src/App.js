@@ -42,7 +42,8 @@ function App() {
           <Route path='/baggage' element={<Baggage/>}/>
           <Route path='/inflight' element={<Inflight/>}/>
           <Route path='/boarding-and-check-in' element={<Boarding/>}/>
-          <Route path='/flights' element={isLogin?<Flights/>:<PleaseLogin/>}/>
+          <Route path='/flights' element={<Flights/>}/>
+          {/* <Route path='/flights' element={isLogin?<Flights/>:<PleaseLogin/>}/> */}
           <Route path='/booking/fill-passenger-details' element={isLogin?<Passenger/>:<PleaseLogin/>}/>
           <Route path='/booking/payment' element={isLogin?<Payment/>:<PleaseLogin/>}/>
           <Route path='/my-journeys' element = {isLogin?<MyJourneysPage/>:<PleaseLogin/>}/>
