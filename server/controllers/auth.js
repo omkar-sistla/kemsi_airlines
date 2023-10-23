@@ -80,7 +80,8 @@ export const login = async(req,res) => {
                 const options ={
                     expires:new Date(Date.now()+7*24*60*60*100),
                     httpOnly: true,
-                    secure: true
+                    secure: true,
+                    sameSite: 'None'
                 }
                 res.cookie("accessToken",token,options).status(200).json(others);
             }         
