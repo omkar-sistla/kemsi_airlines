@@ -7,6 +7,7 @@ export const getFlights = async (req, res) => {
         const end_city=req.query.end_city;
         const query1 = 
         `SELECT DISTINCT
+            1 as stops,
             f.start_city as start_city,
             f.end_city as end_city,
             f.flight_no as flight_no,
@@ -34,6 +35,7 @@ export const getFlights = async (req, res) => {
 
         const query2 = 
         `SELECT DISTINCT
+            2 as stops,
             f1.start_city AS start_city,
             f2.start_city AS transfer_city,
             f2.end_city AS end_city,
@@ -70,6 +72,7 @@ export const getFlights = async (req, res) => {
 
         const query3=
         `select distinct 
+            3 as stops,
             f1.start_city as start_city,
             f1.end_city as first_transfer_city,
             f2.end_city as second_transfer_city,

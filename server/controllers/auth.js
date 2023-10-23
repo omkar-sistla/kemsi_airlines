@@ -1,9 +1,12 @@
 import { db } from "../database.js";
 import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
+import dotenv from 'dotenv';
+const env = dotenv.config();
 
 export const register = async (req, res) => {
     try {
-        const {email, password, first_name, last_name} = req.body;
+        const {email, pass, firstName, lastName} = req.body;
         console.log(email);
         const findUserquery = `SELECT * FROM users WHERE Email = '${email}'`;
         const user = await new Promise((resolve, reject) => {
@@ -17,10 +20,10 @@ export const register = async (req, res) => {
         });
         console.log(user)
         if (user.length!==0){
-            res.status(400).send("User already exists");
+            res.status(404).json("User already exists");
         } 
         else {
-            const hashedPassword = await bcrypt.hash(password, 10);
+            const hashedPassword = await bcrypt.hash(pass, 10);
             const insertUserQuery = `
                 INSERT INTO 
                 users (Email, Password, FirstName, LastName) 
@@ -28,8 +31,8 @@ export const register = async (req, res) => {
                 (
                     '${email}',
                     '${hashedPassword}',
-                    '${first_name}',
-                    '${last_name}'
+                    '${firstName}',
+                    '${lastName}'
                 );`;
             await new Promise((resolve,reject) => {
                 db.query(insertUserQuery,(error, results) => {
@@ -40,8 +43,7 @@ export const register = async (req, res) => {
                     }
                 });
             });
-            // await db.run(insertUserQuery);
-            res.status(200).send("User Created Successfully");
+            res.status(200).json("User Created Successfully");
         }
     } catch (error) {
         return res.status(500).json({error:"internal"});
@@ -50,7 +52,7 @@ export const register = async (req, res) => {
 
 export const login = async(req,res) => {
     try{
-        const{email, password} = req.body;
+        const{email, pass} = req.body;
         const loginQuery = `Select * from users WHERE Email = '${email}'`
         const user=await new Promise((resolve,reject)=>{
             db.query(loginQuery,(error,results)=>{
@@ -61,20 +63,53 @@ export const login = async(req,res) => {
                 }
             });
         });
+        
         console.log(user);
-        if (user.length===0){
-            res.status(404).send("Invalid User");
+        if (user===undefined){
+            return res.status(404).json("Invalid email");
         } else{
-            const isPasswordsMatched = await bcrypt.compare(password,user.Password);
+            const isPasswordsMatched = await bcrypt.compare(pass,user.Password);
             console.log(isPasswordsMatched)
             if (isPasswordsMatched === false){
-                res.status(404).send("Invalid Password");
+                res.status(404).json("Invalid Password");
             } else{
-                res.status(200).json(user);
-            }
+                const secret_string = process.env.SECRET_STRING
+                const {Password,...others}=user;
+                const token = jwt.sign({ user: others },secret_string);
+                
+                const options ={
+                    expires:new Date(Date.now()+7*24*60*60*100),
+                    httpOnly:true
+                }
+                res.cookie("accessToken",token,options).status(200).json(others);
+            }         
         }
-
     } catch (error) {
         return res.status(500).json({error:"internal"});
     }
+};
+
+
+export const logout = (req, res) => {
+    res.clearCookie('accessToken');
+    return res.status(200).json("User has been logged out.")
+};
+
+export const verifyUser = async(req,res,next)=>{
+    const token = await req.cookies.accessToken;
+    if(!token){
+        return res.json("Please Login");
+    } else{
+        jwt.verify(token, "Secret kabatti nenu cheppanu", (err, decoded) =>{
+            if(err){
+                return res.json({Error : "Wrong token"});
+            } else{
+                req.user = decoded.user;
+                next();  
+            }
+        });
+    }
 }
+export const authorize = (verifyUser,(req,res)=>{
+    return res.json({Status:"Success", user: req.user});
+})
