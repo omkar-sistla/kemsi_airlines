@@ -60,7 +60,7 @@ export default function LoginExpress(){
             console.log(errorMsg);
         }
         setSubmitDisable(false);  
-        // window.location.href="/";
+        window.location.href="/";
     };
 
     //function for regestering
