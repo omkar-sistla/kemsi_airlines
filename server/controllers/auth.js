@@ -78,7 +78,7 @@ export const login = async(req,res) => {
                 const token = jwt.sign({ user: others },secret_string);
                 
                 const options ={
-                    expires:new Date(Date.now()+7*24*60*60*100),
+                    expires: new Date(Date.now() + 60 * 1000),
                     httpOnly: true,
                     secure: true,
                     sameSite: 'None'
