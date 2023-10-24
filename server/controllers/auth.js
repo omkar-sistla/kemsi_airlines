@@ -108,7 +108,7 @@ export const verifyUser = async(req,res,next)=>{
     if(!token){
         return res.json("Please Login");
     } else{
-        jwt.verify(token, "Secret kabatti nenu cheppanu", (err, decoded) =>{
+        jwt.verify(token, process.env.SECRET_STRING, (err, decoded) =>{
             if(err){
                 return res.json({Error : "Wrong token"});
             } else{

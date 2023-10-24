@@ -26,7 +26,7 @@ export const AuthContextProvider = ({ children }) => {
         });
     };
     const logout = async() => {
-        await axios.get("https://kemsi-airlines-backend.vercel.app/logout",{
+        await axios.post("https://kemsi-airlines-backend.vercel.app/logout",{
             withCredentials: true
         });
     }
