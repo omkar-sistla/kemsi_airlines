@@ -93,7 +93,13 @@ export const login = async(req,res) => {
 
 
 export const logout = (req, res) => {
-    res.clearCookie('accessToken');
+    const options = {
+        expires: new Date(0),
+        httpOnly: true,
+        secure: true,
+        sameSite: 'None'
+    }
+    res.clearCookie('accessToken',options);
     return res.status(200).json("User has been logged out.")
 };
 
