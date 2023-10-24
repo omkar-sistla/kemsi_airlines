@@ -61,6 +61,7 @@ export default function LoginExpress(){
         }
         setSubmitDisable(false);  
         window.location.href="/";
+        alert("Logged In Successfully");
     };
 
     //function for regestering
@@ -91,6 +92,8 @@ export default function LoginExpress(){
         //request to server
         try{
             await axios.post("https://kemsi-airlines-backend.vercel.app/register",signUpValues,{withCredentials: true} );
+            alert("Account Created Succesfully, Login to Continue");
+            window.location.reload();
         } catch(err){
             setErrorMsg(err.response.data);
             console.log(err);
