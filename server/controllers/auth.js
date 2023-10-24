@@ -92,37 +92,15 @@ export const login = async(req,res) => {
 };
 
 
-// export const logout = (req, res) => {
-//     const options = {
-//         expires: new Date(0),
-//         httpOnly: true,
-//         secure: true,
-//         sameSite: 'None'
-//     }
-//     res.clearCookie('accessToken',options);
-//     return res.status(200).json("User has been logged out.")
-// };
 export const logout = (req, res) => {
-    try {
-        const secret_string = process.env.SECRET_STRING;
-        const { user } = req.user; // Assuming req.user contains the user information
-
-        // Create a new token with the desired expiration time
-        const token = jwt.sign({ user }, secret_string, { expiresIn: '30s' }); // Set to expire in 30 seconds
-
-        // Set the new token as a cookie
-        const options = {
-            expires: new Date(0), // Set to expire in 30 seconds
-            httpOnly: true,
-            secure: true,
-            sameSite: 'None'
-        };
-
-        res.cookie('accessToken', token, options);
-        return res.status(200).json("Token expiration updated.");
-    } catch (error) {
-        return res.status(500).json({ error: "internal" });
+    const options = {
+        expires: new Date(0),
+        httpOnly: true,
+        secure: true,
+        sameSite: 'None'
     }
+    res.clearCookie('accessToken',options);
+    return res.status(200).json("User has been logged out.")
 };
 
 export const verifyUser = async(req,res,next)=>{
