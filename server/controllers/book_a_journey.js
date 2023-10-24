@@ -4,7 +4,7 @@ export const bookJourney = async(req,res)=>{
         const {email,from_city,to_city,booked_date,depart_date,tickets_array,passengers_array}=req.body;
         const bookJourneyQuery = 
         `Insert into 
-        Bookings (booking_email, contact_email, From_City, To_City, Booked_Date, Depart_Date, Arrival_Date)
+        bookings (booking_email, contact_email, From_City, To_City, Booked_Date, Depart_Date, Arrival_Date)
         Values(
             '${email}',
             '${email}',
