@@ -29,7 +29,7 @@ export const bookJourney = async(req,res)=>{
             const {flight_no,depart_date,ticket_class} = ticket;
             const addTicketsQuery=
             `Insert into 
-            Tickets(Booking_Id, flight_no, Depart_Date, Arrival_Date, No_Passengers, Class)
+            tickets(Booking_Id, flight_no, Depart_Date, Arrival_Date, No_Passengers, Class)
             Values(
                 '${bookingId}',
                 '${flight_no}',
@@ -54,7 +54,7 @@ export const bookJourney = async(req,res)=>{
             const addPassengersQuery = 
             `
             Insert into
-            Passengers(Booking_Id, Passenger_Name, Passenger_Age, Passenger_Gender, Passenger_Email, Passenger_Mobile)
+            passengers(Booking_Id, Passenger_Name, Passenger_Age, Passenger_Gender, Passenger_Email, Passenger_Mobile)
             Values(
                 '${bookingId}',
                 '${name}',
