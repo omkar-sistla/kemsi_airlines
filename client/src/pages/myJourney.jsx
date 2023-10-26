@@ -110,7 +110,7 @@ export default function MyJourneysPage(){
     }, [user]);
     const navigate = useNavigate()
     const goBack = ()=>{
-        navigate("/",{ replace: true })
+        navigate(-1);
     }
     return(
         <div className="my_journeys_page">
