@@ -54,14 +54,15 @@ export default function LoginExpress(){
         setErrorMsg("");
         setSubmitDisable(true);
         try{
-            await login(signInValues);            
+            await login(signInValues);               
+            window.location.href="/";
+            alert("Logged In Successfully");     
         } catch(err){
             setErrorMsg(err.response.data);
             console.log(errorMsg);
         }
         setSubmitDisable(false);  
-        window.location.href="/";
-        alert("Logged In Successfully");
+
     };
 
     //function for regestering

@@ -108,12 +108,15 @@ export default function MyJourneysPage(){
         }
         getCancelledJourneys();
     }, [user]);
-
+    const navigate = useNavigate()
+    const goBack = ()=>{
+        navigate("/",{ replace: true })
+    }
     return(
         <div className="my_journeys_page">
             <div className="my_journeys_header">
                 <div className="name_and_button">
-                    <div className="backbutton">
+                    <div className="backbutton" onClick={goBack}>
                         <i className="fa-solid fa-arrow-left"></i>
                     </div>                 
                     <h2>My Journeys</h2>
