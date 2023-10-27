@@ -14,14 +14,16 @@ function formatDate(dateString) {
 function Journey(props){
     const navigate = useNavigate();
     const {setBookingId,setJourney} = useContext(JourneyContext);
-    useEffect(() => {
-        if (props.Booking_Id) {
-            setBookingId(props.Booking_Id);
-            setJourney(props.journey);
-        }
-    }, [props.Booking_Id, setBookingId, props.journey, setJourney]);
+    // useEffect(() => {
+    //     if (props.Booking_Id) {
+    //         setBookingId(props.Booking_Id);
+    //         setJourney(props.journey);
+    //     }
+    // }, [props.Booking_Id, setBookingId, props.journey, setJourney]);
 
     const getTickets = () => {
+        setBookingId(props.Booking_Id);
+        setJourney(props.journey);
         navigate('/my-journeys/journey-details'); // Navigate to "/tickets" when clicked
     }
     return(
