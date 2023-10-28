@@ -79,7 +79,7 @@ export const login = async(req,res) => {
                 
                 const options ={
                     expires: new Date(Date.now() + 60 * 1000),
-                    httpOnly: true,
+                    // httpOnly: true,
                     secure: true,
                     sameSite: 'None'
                 }
@@ -95,7 +95,7 @@ export const login = async(req,res) => {
 export const logout = (req, res) => {
     const options = {
         expires: new Date(0),
-        httpOnly: true,
+        // httpOnly: true,
         secure: true,
         sameSite: 'None'
     }
