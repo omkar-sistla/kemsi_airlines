@@ -112,7 +112,7 @@ export default function LoginExpress(){
         <div id="login_page"> 
             <NavBar/>      
             <form className={signup ? "login_form inactive" : 'login_form'}>
-                <h2>SIGN IN EXPRESS</h2>
+                <h2>SIGN IN</h2>
                 <InputContainer label="EMAIL/USERNAME" type="text" placeholder="EMAIL/USERNAME" 
                 onChange={(e)=> setSignInValues((prev)=>({...prev, email:e.target.value}))}/>
 
@@ -128,7 +128,7 @@ export default function LoginExpress(){
                 </div>                
             </form>
             <form className={signup ? "signup_form active" : 'signup_form'}>
-                <h2>SIGN UP EXPRESS</h2>
+                <h2>SIGN UP</h2>
                 <NameInput 
                     fchange={(event) => 
                         setSignUpValues((prev) => 
