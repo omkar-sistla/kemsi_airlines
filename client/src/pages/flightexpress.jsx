@@ -237,8 +237,8 @@ function ExpressFlightRoute({route,viewActive}){
                         <p >Flight Duration: {calculateLayoff(route.second_start_time,route.second_arrival_time)}</p>
                     </div>
                     <div className="arrival">
-                        <p className="time_place">{changeTimeFormat(route.second_arrival_time)} {route.end_city+"("+airport_data[route.end_city].code+")"}</p>
-                        <p className="airport">{airport_data[route.end_city].airport}</p>
+                        <p className="time_place">{changeTimeFormat(route.second_arrival_time)} {route.second_transfer_city+"("+airport_data[route.second_transfer_city].code+")"}</p>
+                        <p className="airport">{airport_data[route.second_transfer_city].airport}</p>
                     </div>
                     <div className="layoff_sec">
                         <p><i className="fa-solid fa-hotel"></i></p>
