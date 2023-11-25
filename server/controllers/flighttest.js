@@ -102,7 +102,10 @@ export const getFlights = async (req, res) => {
             f1.start_city=? 
             and f3.end_city=?
             and f2.departure_time>=addtime(f1.departure_time,ADDTIME(f1.flight_duration,"00:45:00"))
-            and f3.departure_time>=addtime(f2.departure_time,ADDTIME(f2.flight_duration,"00:45:00"));`
+            and f3.departure_time>=addtime(f2.departure_time,ADDTIME(f2.flight_duration,"00:45:00"))
+            and f2.end_city!= f1.start_city
+            and f3.end_city!= f2.start_city
+            and f3.end_city!= f1.start_city;`
 
         const results3 = await new Promise((resolve, reject) => {
             db.query(query3, [start_city,end_city], (error, results) => {
