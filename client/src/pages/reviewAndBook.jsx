@@ -201,7 +201,11 @@ export default function Payment(){
                         </div>
                     </div>
                 </div>
-                <button className="payment_button" type="button" onClick={handlePayment}>Pay INR {(bookedRoute.economy_price*currentbook.passengers).toLocaleString('en-In')}</button>
+                <button className="payment_button" type="button" onClick={handlePayment}>Pay INR {" "+
+                (currentbook.class==="Economy" ? (bookedRoute.economy_price*currentbook.passengers).toLocaleString('en-In')
+                :currentbook.class==="Business Class" ? (bookedRoute.business_price*currentbook.passengers).toLocaleString('en-In')
+                :currentbook.class==="First Class" && (bookedRoute.first_class_price*currentbook.passengers).toLocaleString('en-In'))
+                }</button>            
             </div>
         )
     }
