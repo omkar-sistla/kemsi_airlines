@@ -97,7 +97,9 @@ export const logout = (req, res) => {
     // return res.status(200).json("User has been logged out.")
     res.cookie("accessToken",null,{
         expires: new Date(Date.now()),
-        httpOnly: true
+        httpOnly: true,
+        secure: true,
+        sameSite: 'None'
     });
     res.status(200).json({
         message:"Succesfully Logged Out"
