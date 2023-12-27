@@ -93,8 +93,15 @@ export const login = async(req,res) => {
 
 
 export const logout = (req, res) => {
-    res.clearCookie('accessToken');
-    return res.status(200).json("User has been logged out.")
+    // res.clearCookie('accessToken');
+    // return res.status(200).json("User has been logged out.")
+    res.cookie("accessToken",null,{
+        expires: new Date(Date.now()),
+        httpOnly: true
+    });
+    res.status(200).json({
+        message:"Succesfully Logged Out"
+    })
 };
 
 export const verifyUser = async(req,res,next)=>{
